@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munaf</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+<body>
+    <section id="intro">
+        <nav>
+            <img src="icons/Logo.svg" style="margin-right: auto;">
+
+            <div id="navButtons">
+                <a href="">Home</a>
+                <a href="">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="socials" style="filter: invert(100%);">
+                <a href="">
+                    <img src="icons/socials/Behance_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/LinkedIN_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/Github_black.svg" alt="">
+                </a>
+            </div>
+
+            <div id="darkMode">
+                <div id="darkButton" onclick="DarkLightMode()">
+                    <div class="circle" id="darkBtnCircle" ></div>
+                </div>
+                <p>Dark</p>
+            </div>
+        </nav>
+
+        <div id="intro-content">
+            <div id="jobTitle">
+                <p>UI/UX Designer & Developer</p>
+            </div>
+
+            <div id="mainTitle">
+                <h1>Hi, I am Munaf</h1>
+            </div>
+
+            <div id="slogan">
+                <p>Phasellus nec fringilla sapien. Pellentesque luctus libero vitae ex lobortis, eu facilisis justo.</p>
+            </div>
+
+            <div id="introButtons">
+                <a href="">Connect</a>
+                <a href="">Projects</a>
+            </div>
+
+        </div>
+        <div id="introImage">
+            <img src="images/sideimageintro.svg" alt="" >
+        </div>
+        
+    </section>
+
+    <section id="about">
+        <div id="left-about">
+            <div class="sub-title">
+                <a href="">About Me</a>
+            </div>
+
+            <p>Donec mattis vitae augue ut egestas. Cras eleifend pellentesque purus, quis tristique sapien efficitur id. Mauris quis ante sit amet leo elementum imperdiet. Donec vitae nisi convallis, hendrerit ligula in, eleifend lacus. Nullam ut elit at tortor mattis consequat nec ultricies lectus. <br><br> Morbi sit amet ipsum tellus. Proin sapien magna, blandit nec massa eu, aliquet sollicitudin tellus. Etiam sodales rutrum volutpat. Pellentesque posuere eleifend sem, fringilla blandit orci consectetur ac.</p>
+        
+            <div id="tools-about">
+                <img src="icons/tech-icons/Figma Icon.png" alt="">
+                <img src="icons/tech-icons/AI Icon.png" alt="">
+                <img src="icons/tech-icons/XD Icon.png" alt="">
+                <img src="icons/tech-icons/HTML Icon.png" alt="">
+                <img src="icons/tech-icons/CSS Icon.png" alt="">
+                <img src="icons/tech-icons/JS Icon.png" alt="">
+
+            </div>
+        </div>
+        
+        <div id="right-about">
+            <div class="card design" style="margin-right: 26px;margin-bottom: 26px;">
+                <img src="icons/design.svg" alt="">
+                <p>Design</p>
+            </div>
+
+            <div class="card development" style="margin-bottom: 26px;">
+                <img src="icons/web-programming.svg" alt="">
+                <p>Development</p>
+            </div>
+
+            <div class="card uiux" style="margin-right: 26px;">
+                <img src="icons/ux-design.svg" alt="">
+                <p>UI/UX</p>
+            </div>
+
+            <div class="card branding">
+                <img src="icons/branding.svg" alt="">
+                <p>Branding</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="work">
+        <div id="workTopBar">
+            <div class="sub-title">
+                <a href="">My Work</a>
+            </div>
+
+            <div id="viewMore">
+                <p>View More</p>
+                <img src="icons/Arrow - Right.svg" alt="">
+            </div>
+        </div>
+
+        <div id="workType">
+            <div class="web active" style="border-radius: 0 0 0 14px;" onclick="changeWorkType(this)">
+                <p>Web</p>
+            </div>
+            <div class="mobile" style="border-radius: 0 0 14px 0;" onclick="changeWorkType(this)">
+                <p>Mobile</p>
+            </div>
+        </div>
+        <div id="webWork" class="workBlock">
+            <div class="project" style="margin-top: 0;">
+                <img src="images/sampleprojectimg.jpg" alt="">
+                <div class="project-details">
+                    <p class="category">Web Design / Development</p>
+                    <h3 class="project-title">Aden - Python Developer Portfolio</h3>
+                    <p class="project-description">Curabitur vel dolor consequat, ultrices ex vitae, fermentum neque. Cras sit amet fermentum lorem.</p>
+                    <a href="" class="project-view-btn">View</a>
+                </div>
+            </div>
+
+            <div class="project" >
+                <img src="images/sampleprojectimg.jpg" alt="">
+                <div class="project-details">
+                    <p class="category">Web Design / Development</p>
+                    <h3 class="project-title">Aden - Python Developer Portfolio</h3>
+                    <p class="project-description">Curabitur vel dolor consequat, ultrices ex vitae, fermentum neque. Cras sit amet fermentum lorem.</p>
+                    <a href="" class="project-view-btn">View</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/sampleprojectimg.jpg" alt="">
+                <div class="project-details">
+                    <p class="category">Web Design / Development</p>
+                    <h3 class="project-title">Aden - Python Developer Portfolio</h3>
+                    <p class="project-description">Curabitur vel dolor consequat, ultrices ex vitae, fermentum neque. Cras sit amet fermentum lorem.</p>
+                    <a href="" class="project-view-btn">View</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobileWork" class="workBlock" style="display: none;">
+            <div class="project" style="margin-top: 0;">
+                <img src="images/sampleprojectimg.jpg" alt="">
+                <div class="project-details">
+                    <p class="category">UI/UX Design</p>
+                    <h3 class="project-title">Walley - Mobile Banking App</h3>
+                    <p class="project-description">Curabitur vel dolor consequat, ultrices ex vitae, fermentum neque. Cras sit amet fermentum lorem.</p>
+                    <a href="" class="project-view-btn">View</a>
+                </div>
+            </div>
+
+            <div class="project" >
+                <img src="images/sampleprojectimg.jpg" alt="">
+                <div class="project-details">
+                    <p class="category">Web Design / Development</p>
+                    <h3 class="project-title">Aden - Python Developer Portfolio</h3>
+                    <p class="project-description">Curabitur vel dolor consequat, ultrices ex vitae, fermentum neque. Cras sit amet fermentum lorem.</p>
+                    <a href="" class="project-view-btn">View</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="images/sampleprojectimg.jpg" alt="">
+                <div class="project-details">
+                    <p class="category">Web Design / Development</p>
+                    <h3 class="project-title">Aden - Python Developer Portfolio</h3>
+                    <p class="project-description">Curabitur vel dolor consequat, ultrices ex vitae, fermentum neque. Cras sit amet fermentum lorem.</p>
+                    <a href="" class="project-view-btn">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="companiesWorked">
+        <img src="images/v920-kul-04-02.png" alt="">
+        <img src="images/v920-kul-04-03.png" alt="">
+        <img src="images/v920-kul-04-04.png" alt="">
+        <img src="images/v920-kul-04-05.png" alt="">
+        <img src="images/v920-kul-04-06.png" alt="">
+    </section>
+
+    <section id="connect">
+        <div class="left-connect">
+            <h3>Let's work together on your project!</h3>
+            <p>Aenean ut felis et elit dapibus blandit. Nunc in massa lacinia, aliquet turpis quis, gravida urna. Aliquam dolor metus, tincidunt quis condimentum ac, mattis eu diam. </p>
+
+        </div>
+        <a href="">Contact Now</a>
+    </section>
+
+    <footer>
+        <div class="upper">
+            <div class="left-footer">
+                <h3>Munaf</h3>
+                <p>Nam iaculis ornare justo iaculis</p>
+            </div>
+            <div class="right-footer">
+                <h4>Connect</h4>
+                <p>(+92) 314 6590345</p>
+                <p>munafhassan23@gmail.com</p>
+                <p>Islamabad, Pakistan</p>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <a href="">Home</a>
+            <a href="">Projects</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright 2021</p>
+
+            <div class="socials" id="footerSocials">
+                <a href="">
+                    <img src="icons/socials/Behance_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/LinkedIN_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/Github_black.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/scripts.js"></script>
+</body>
+</html>

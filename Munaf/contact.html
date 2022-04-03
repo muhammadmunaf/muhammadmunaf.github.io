@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Munaf</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+<body>
+    <section id="intro" class="aboutPage">
+        <nav>
+            <img src="icons/Logo.svg" style="margin-right: auto;">
+
+            <div id="navButtons">
+                <a href="index.html">Home</a>
+                <a href="">Projects</a>
+                <a href="about.html">About</a>
+                <a href="">Contact</a>
+            </div>
+
+            <div class="socials" style="filter: invert(100%);">
+                <a href="">
+                    <img src="icons/socials/Behance_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/LinkedIN_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/Github_black.svg" alt="">
+                </a>
+            </div>
+
+            <div id="darkMode">
+                <div id="darkButton" onclick="DarkLightMode()">
+                    <div class="circle" id="darkBtnCircle" ></div>
+                </div>
+                <p>Dark</p>
+            </div>
+        </nav>
+
+        <h3 id="subPageHeading">Contact</h3>
+        
+    </section>
+
+    <section id="contactContainer">
+        <div id="contactInfo">
+            <h3>Contact Information</h3>
+
+            <div class="info">
+                <img src="icons/mail.svg" alt="">
+                <p>munafhassan23@gmail.com</p>
+            </div>
+
+            <div class="info">
+                <img src="icons/phone.svg" alt="">
+                <p>+92 315 7600100</p>
+            </div>
+
+            <div class="socials" style="filter: invert(100%)">
+                <a href="">
+                    <img src="icons/socials/Behance_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/LinkedIN_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/Github_black.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div id="contactForm">
+            <h3>Get in contact with me!</h3>
+
+            <form action="" id="contactMeForm">
+                <div class="blockTempForm">
+                    <div class="formField">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="nameCF">
+                    </div>
+                    
+                    <div class="formField" style="margin-right: 0;">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" id="emailCF">
+                    </div>
+                </div>
+
+                <div class="formField">
+                    <label for="type">Subject</label>
+                    <input type="text" name="type" id="nameCF" style="width: 47.6%;">
+                </div>
+                
+                <div class="formField">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="messageCF">
+                </div>
+                
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="upper">
+            <div class="left-footer">
+                <h3>Munaf</h3>
+                <p>Nam iaculis ornare justo iaculis</p>
+            </div>
+            <div class="right-footer">
+                <h4>Connect</h4>
+                <p>(+92) 314 6590345</p>
+                <p>munafhassan23@gmail.com</p>
+                <p>Islamabad, Pakistan</p>
+            </div>
+        </div>
+        <div class="nav-footer">
+            <a href="">Home</a>
+            <a href="">Projects</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright 2021</p>
+
+            <div class="socials" id="footerSocials">
+                <a href="">
+                    <img src="icons/socials/Behance_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/LinkedIN_black.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="icons/socials/Github_black.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script/scripts.js"></script>
+</body>
+</html>
