@@ -681,6 +681,115 @@ footer .socials a img:hover {
     opacity: 0.8;
 }
 
+#comments .addComment form.unactiveComment input {
+    padding: 16px 24px;
+    border-radius: 10px;
+    width: 30vw;
+    background-color: #292929;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+#comments .addComment form.activeComment {
+    background-color: #292929;
+    border-radius: 10px;
+    padding: 16px;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+#comments .addComment form.activeComment .userCommentProfile {
+    display: flex;
+    margin-bottom: 16px;
+    align-items: center;
+}
+#comments .addComment form.activeComment .userCommentProfile img {
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+#comments .addComment form.activeComment .userCommentProfile h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+#comments .addComment form.activeComment textarea {
+    outline: none;
+    background-color: #292929;
+    border: none;
+    resize: none;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+}
+#comments .addComment form.activeComment button.respond {
+    padding: 8px 40px;
+    background-color: var(--red);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: auto;
+    border: 1px solid var(--red);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#comments .addComment form.activeComment button.respond:hover {
+    border: 1px solid white;
+    background-color: #292929;
+}
+#comments .previousComments .oldComment {
+    margin: 32px 0;
+}
+#comments .previousComments .oldComment .oldCommentUser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#comments .previousComments .oldComment .oldCommentUser img {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+    border-radius: 100%;
+}
+#comments .previousComments .oldComment .oldCommentUser div h4 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+#comments .previousComments .oldComment .oldCommentUser div p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+#comments .previousComments .oldComment .commentText {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+#comments .previousComments .oldComment button.commentReplyBtn {
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 8px 40px;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+#comments .previousComments .oldComment button.commentReplyBtn:hover {
+    background-color: white;
+    color: var(--black);
+}
+
 @media screen and (max-width: 560px) {
     .mainCTATitle {
         font-weight: 800;
