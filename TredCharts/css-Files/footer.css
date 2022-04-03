@@ -1,0 +1,79 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+
+footer #upperFooter {
+    display: flex;
+    flex-direction: row;
+    background-color: #14395B;
+    color: white;
+    padding: 0 12%;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+footer #sectionOne {
+    width: 30%;
+}
+footer #sectionOne img#logoFooter {
+    width: 200px;
+    margin-bottom: 1em;
+}
+footer #sectionOne .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+footer #sectionOne .socials a {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 2em 0;
+    margin-right: 1em;
+}
+footer #sectionOne .socials a img {
+    filter: invert(70%) sepia(39%) saturate(273%) hue-rotate(169deg) brightness(94%) contrast(93%);
+}
+footer #sectionOne .socials a:hover {
+    background-color: #2289FF;
+    transition: 0.2s ease;
+}
+footer #sectionOne .socials a:hover img{
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(275deg) brightness(107%) contrast(101%);
+    transition: 0.2s ease;
+}
+footer h3 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+footer div a {
+    color: white;
+}
+footer #sectionTwo, #sectionThree, #sectionFour {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+#sectionTwo a, #sectionThree a, #sectionFour p {
+    padding: 0.5em 0;
+    font-size: 14px;
+}
+footer #lowerFooter {
+    background-color: #0B2F50;
+    display: flex;
+    flex-direction: row;
+    padding: 1em 12%;
+    color: white;
+    font-size: 14px;
+}
+footer a:hover {
+    text-decoration: underline;
+    transition: 0.2s ease;
+}

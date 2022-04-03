@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TredCharts</title>
+    
+        <link rel="stylesheet" href="css-Files/loginRegister.css">
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    </head>
+<body>
+
+    <section id="loginPopUp">
+        <div class="popUpOptions">
+            <a href="" class="activeOption">Sign In</a>
+            <a href="">Register</a>
+        </div>
+
+        <div class="blockLoginRegister">
+            <img src="images/login_block.svg" id="loginBlockImg">
+            <img src="images/logo.png" id="loginBlockLogo">
+        </div>
+
+        <div class="loginPart">
+            <h3 style="font-weight: bold;">Sign In</h3>
+            <a href="" class="googleBlock">
+                <img src="images/googleLogo.svg" alt="">
+                <p>Sign In with Google</p>
+            </a>
+            <div class="orDivider">
+                <div class="line" style="margin-right: auto;"></div>
+                <p>or</p>
+                <div class="line" style="margin-left: auto;"></div>
+            </div>
+
+            <form action="" id="loginForm">
+                <p>Email Address</p>
+                <input type="email" name="email" id="" value="example@gmail.com" onfocus="this.value=''">
+
+                <p>Password</p>
+                <input type="password" name="password" id="" value="samplepassword" onfocus="this.value=''">
+
+                <input type="submit" value="Sign In">
+
+                <a href="">Forgot Password?</a>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Registeration one is below, the id naming is a little wrong 
+         here as I first didn't consider it and login and registration
+         are exactly the same and changing ids/classes would require 
+         changes in CSS, however if you still want me to correct 
+         the naming convention, just let me know! -->
+
+    <section id="registerPopUp">
+        <div class="popUpOptions">
+            <a href="">Sign In</a>
+            <a href="" class="activeOption">Register</a>
+        </div>
+
+        <div class="blockLoginRegister">
+            <img src="images/login_block.svg" id="loginBlockImg">
+            <img src="images/logo.png" id="loginBlockLogo">
+        </div>
+
+        <div class="registerPart">
+            <h3 style="font-weight: bold;">Register</h3>
+            <a href="" class="googleBlock">
+                <img src="images/googleLogo.svg" alt="">
+                <p>Sign Up with Google</p>
+            </a>
+            <div class="orDivider">
+                <div class="line" style="margin-right: auto;"></div>
+                <p>or</p>
+                <div class="line" style="margin-left: auto;"></div>
+            </div>
+
+            <form action="" id="registerForm">
+                <p>Email Address</p>
+                <input type="email" name="email" id="" value="example@gmail.com" onfocus="this.value=''">
+
+                <p>Password</p>
+                <input type="password" name="password" id="" value="samplepassword" onfocus="this.value=''">
+
+                <p>Repeat Password</p>
+                <input type="password" name="password" id="" value="samplepassword" onfocus="this.value=''">
+
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,30 @@
+section#aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin: 2em 8em;
+    padding: 1em;
+    padding-bottom: 3em;
+}
+section#aboutUs h2 {
+    text-align: center;
+    color: #A8A8A8;
+    margin-bottom: 0.5em;
+}
+section#aboutUs #aboutUsInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+section#aboutUs #aboutUsInfo div {
+    width: 30%;
+    text-align: center;
+    padding: 1.5em;
+}
+section#aboutUs #aboutUsInfo div h3 {
+    margin-bottom: 2em;
+}
+section#aboutUs #aboutUsInfo .seperatorAboutUs {
+    height: 36em;
+}
