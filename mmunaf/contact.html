@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="Images/favicon.png" />
+
+        <title>Contact</title>
+    </head>
+    <body>
+        <nav id="desktop">
+            <div class="leftSideNav">
+                <img src="Images/logo.jpg" alt="" />
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="services.html">Services</a>
+                    <a href="#" class="active">Contact</a>
+                </div>
+            </div>
+            <div class="rightSideNav">
+                <a href="https://www.behance.net/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </nav>
+
+        <nav id="mobile">
+            <img
+                src="Icons/menu.svg"
+                alt="hamburger icon"
+                id="navExpandBtn"
+                onclick="navMenuControl()"
+            />
+        </nav>
+        <div class="mobileNavBtns" id="mobileNavOptions">
+            <div class="navLinksMobile">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+            <div class="socialsMobileTop">
+                <a href="https://www.behance.net/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </div>
+
+        <section id="contact">
+            <p class="contactTitle">Let's work together!</p>
+            <div class="contactOuterContainer">
+                <div class="contactInfo">
+                    <p class="smallCaps">Connect</p>
+                    <p class="contactInfoContent">info@gmail.com</p>
+                    <p class="contactInfoContent">+92 315 7600100</p>
+                    <!-- <div class="whatsappContact">
+                        <img src="Images/Blank.jpg" alt="QR code" />
+                        <p class="contactInfoContent">Whatsapp QR</p>
+                    </div> -->
+                </div>
+                <div class="contactForm">
+                    <form
+                        action="https://formspree.io/f/xlezjwrj"
+                        method="POST"
+                    >
+                        <div class="row">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                style="margin-right: 20px"
+                                name="name"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                name="_replyto"
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            placeholder="Project Details"
+                            cols="10"
+                            rows="10"
+                        ></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="horizontalLine" style="background-color: #333b3d">
+                <hr style="color: #ffffff" />
+            </div>
+
+            <div class="footerContent">
+                <p>Copyright 2021, Munaf</p>
+                <div class="socialsFooter">
+                    <a href="https://www.behance.net/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Behance -Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://dribbble.com/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Dribbble - Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://www.linkedin.com/in/mmunaf/"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/LinkedIn - Original.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function navMenuControl() {
+                if (
+                    document.getElementById("mobileNavOptions").style.display ==
+                    "none"
+                ) {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "flex";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/cross.svg");
+                } else {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "none";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/menu.svg");
+                }
+            }
+        </script>
+    </body>
+</html>

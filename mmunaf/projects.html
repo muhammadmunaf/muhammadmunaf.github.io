@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="Images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Projects</title>
+    </head>
+    <body>
+        <nav id="desktop">
+            <div class="leftSideNav">
+                <img src="Images/logo.jpg" alt="" />
+                <div class="navLinks">
+                    <a href="index.html">Home</a>
+                    <a href="#" class="active">Projects</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="rightSideNav">
+                <a href="https://www.behance.net/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </nav>
+
+        <nav id="mobile">
+            <img
+                src="Icons/menu.svg"
+                alt="hamburger icon"
+                id="navExpandBtn"
+                onclick="navMenuControl()"
+            />
+        </nav>
+        <div class="mobileNavBtns" id="mobileNavOptions">
+            <div class="navLinksMobile">
+                <a href="index.html">Home</a>
+                <a href="#" class="active">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialsMobileTop">
+                <a href="https://www.behance.net/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </div>
+
+        <section id="servicesHeading">
+            <p class="smallCaps" style="color: #ffffff">projects</p>
+            <p class="mainHeadingText">
+                Aliquam sit amet augue vel neque tincidunt lobortis a id purus.
+            </p>
+        </section>
+
+        <section id="projectDetails">
+            <div class="projectCatSelector">
+                <div class="catBtn current">
+                    <p class="catBtnText">UI/UX</p>
+                </div>
+                <div class="catBtn">
+                    <p class="catBtnText">Mobile Design</p>
+                </div>
+                <div class="catBtn">
+                    <p class="catBtnText">Web Design</p>
+                </div>
+                <div class="catBtn">
+                    <p class="catBtnText">Web Development</p>
+                </div>
+            </div>
+
+            <div class="projectCatMobileSelector">
+                <select>
+                    <option value="">UI/UX</option>
+                    <option value="">Mobile Design</option>
+                    <option value="">Web Design</option>
+                    <option value="">Web Development</option>
+                </select>
+            </div>
+
+            <div class="projects">
+                <div
+                    class="projectTemplateBig proj1"
+                    onclick="window.open(
+                        'https://www.behance.net/gallery/135357335/CookEasy-UX-Case-Study',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">CookEasy</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Branding</p>
+                            <p>Mobile app</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="projectTemplateSmall proj2"
+                    onclick="window.open(
+                    'https://muhammadmunaf.github.io/Dashnect/',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">Dashnect</p>
+                        <div class="projectTemplateTags">
+                            <p>Web Development</p>
+                            <p>Web App</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="projectTemplateSmall proj3"
+                    onclick="window.open(
+                    'https://www.behance.net/gallery/127384807/BellyFull-Food-Delivery-App-Design-Concept',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">BellyFull</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="projectTemplateBig proj4"
+                    onclick="window.open(
+                    'https://www.behance.net/gallery/128820167/Python-Developer-Website-Design',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">Aden</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Web Development</p>
+                            <p>Portfolio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="horizontalLine" style="background-color: #333b3d">
+                <hr style="color: #ffffff" />
+            </div>
+
+            <div class="footerContent">
+                <p>Copyright 2021, Munaf</p>
+                <div class="socialsFooter">
+                    <a href="https://www.behance.net/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Behance -Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://dribbble.com/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Dribbble - Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://www.linkedin.com/in/mmunaf/"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/LinkedIn - Original.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function navMenuControl() {
+                if (
+                    document.getElementById("mobileNavOptions").style.display ==
+                    "none"
+                ) {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "flex";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/cross.svg");
+                } else {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "none";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/menu.svg");
+                }
+            }
+        </script>
+    </body>
+</html>

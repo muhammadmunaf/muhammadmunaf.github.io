@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="Images/favicon.png" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+
+        <title>Home</title>
+    </head>
+    <body>
+        <nav id="desktop">
+            <div class="leftSideNav">
+                <img src="Images/logo.jpg" alt="" />
+                <div class="navLinks">
+                    <a href="#" class="active">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="rightSideNav">
+                <a href="https://www.behance.net/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </nav>
+
+        <nav id="mobile">
+            <img
+                src="Icons/menu.svg"
+                alt="hamburger icon"
+                id="navExpandBtn"
+                onclick="navMenuControl()"
+            />
+        </nav>
+        <div class="mobileNavBtns" id="mobileNavOptions">
+            <div class="navLinksMobile">
+                <a href="#" class="active">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="socialsMobileTop">
+                <a href="https://www.behance.net/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Behance -Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://dribbble.com/mmunaf"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/Dribbble - Original.svg"
+                        alt=""
+                /></a>
+                <a href="https://www.linkedin.com/in/mmunaf/"
+                    ><img
+                        class="socialIconTop"
+                        src="Icons/LinkedIn - Original.svg"
+                        alt=""
+                /></a>
+            </div>
+        </div>
+
+        <section id="hero">
+            <div class="heroContent">
+                <p class="smallCaps" style="color: #ffffff">Hi, i am munaf</p>
+                <p class="mainHeadingText">
+                    Aliquam sit amet augue vel neque tincidunt lobortis a id
+                    purus.
+                </p>
+                <div class="heroBtns">
+                    <a id="downloadProjectBtn" href="">Download Projects</a>
+                    <a id="getInContactBtn" href="#contact"
+                        >Get in Contact
+                        <img
+                            src="Icons/arrow-right.svg"
+                            alt="right arrow"
+                            style="margin-left: 6px"
+                    /></a>
+                </div>
+            </div>
+            <img src="Images/hero_img.png" alt="" class="heroPic" />
+        </section>
+
+        <section id="myGoal">
+            <img src="Images/my_goal_img.png" alt="" />
+            <div class="myGoalContent">
+                <p class="smallCaps">My goal</p>
+                <p class="bodyText">
+                    I create websites, webapps and mobile apps that helps users
+                    solve their problems efficiently and effectively. The main
+                    goal is always to prioritize the user and secondary help my
+                    clients grow their revenue and get the best possible
+                    product!
+                </p>
+            </div>
+        </section>
+
+        <div class="horizontalLine">
+            <hr />
+        </div>
+
+        <section id="myProjects">
+            <div class="myProjectsContent">
+                <p class="smallCaps">My projects</p>
+                <p class="bodyText">
+                    Wide range from websites, webapps to mobile apps, each of
+                    them unique and successful in their own way.
+                </p>
+            </div>
+            <div class="projects">
+                <div
+                    class="projectTemplateBig proj1"
+                    onclick="window.open(
+                        'https://www.behance.net/gallery/135357335/CookEasy-UX-Case-Study',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">CookEasy</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Branding</p>
+                            <p>Mobile app</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="projectTemplateSmall proj2"
+                    onclick="window.open(
+                    'https://muhammadmunaf.github.io/Dashnect/',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">Dashnect</p>
+                        <div class="projectTemplateTags">
+                            <p>Web Development</p>
+                            <p>Web App</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="projectTemplateSmall proj3"
+                    onclick="window.open(
+                    'https://www.behance.net/gallery/127384807/BellyFull-Food-Delivery-App-Design-Concept',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">BellyFull</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="projectTemplateBig proj4"
+                    onclick="window.open(
+                    'https://www.behance.net/gallery/128820167/Python-Developer-Website-Design',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">Aden</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Web Development</p>
+                            <p>Portfolio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="seeAllProjectsBtn" href="projects.html"
+                >See all projects <img src="Icons/arrow-right.svg" alt=""
+            /></a>
+        </section>
+
+        <section id="services">
+            <p class="smallCaps">Services</p>
+            <p class="bodyText">
+                I create digital solutions to solve real life problems
+            </p>
+
+            <div class="servicesContainer">
+                <div class="servicesBox service1">
+                    <img src="Images/ui_service.png" alt="" />
+                    <div class="serviceBoxContent">
+                        <p class="serviceBoxTitle">UI/UX</p>
+                        <p class="serviceBoxPara">
+                            Morbi accumsan tristique lacus, at posuere nisi
+                            laoreet nec. Maecenas fringilla arcu sit amet
+                            ultrices semper.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="servicesBox">
+                    <img src="Images/dev_service.png" alt="" />
+                    <div class="serviceBoxContent">
+                        <p class="serviceBoxTitle">Web-Dev</p>
+                        <p class="serviceBoxPara">
+                            Morbi accumsan tristique lacus, at posuere nisi
+                            laoreet nec. Maecenas fringilla arcu sit amet
+                            ultrices semper.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="horizontalLine" style="background-color: #333b3d">
+            <hr style="color: #ffffff" />
+        </div>
+
+        <section id="about">
+            <img src="Images/Blank.jpg" alt="" />
+            <div class="aboutContent">
+                <p class="smallCaps">About</p>
+                <p class="bodyText">
+                    Quisque dictum tortor viverra metus ultrices, nec tristique
+                    sem vehicula. Maecenas at velit dictum, tristique ipsum in,
+                    viverra elit. Proin iaculis sem dolor. Quisque dictum tortor
+                    viverra metus ultrices, nec tristique sem vehicula.
+                </p>
+            </div>
+        </section>
+
+        <div class="horizontalLine" style="background-color: #333b3d">
+            <hr style="color: #ffffff" />
+        </div>
+
+        <section id="contact">
+            <p class="contactTitle">Let's work together!</p>
+            <div class="contactOuterContainer">
+                <div class="contactInfo">
+                    <p class="smallCaps">Connect</p>
+                    <p class="contactInfoContent">info@gmail.com</p>
+                    <p class="contactInfoContent">+92 315 7600100</p>
+                    <!-- <div class="whatsappContact">
+                        <img src="Images/Blank.jpg" alt="QR code" />
+                        <p class="contactInfoContent">Whatsapp QR</p>
+                    </div> -->
+                </div>
+                <div class="contactForm">
+                    <form
+                        action="https://formspree.io/f/xlezjwrj"
+                        method="POST"
+                    >
+                        <div class="row">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                style="margin-right: 20px"
+                                name="name"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                name="_replyto"
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            placeholder="Project Details"
+                            cols="10"
+                            rows="10"
+                        ></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="horizontalLine" style="background-color: #333b3d">
+                <hr style="color: #ffffff" />
+            </div>
+
+            <div class="footerContent">
+                <p>Copyright 2021, Munaf</p>
+                <div class="socialsFooter">
+                    <a href="https://www.behance.net/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Behance -Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://dribbble.com/mmunaf"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/Dribbble - Original.svg"
+                            alt=""
+                    /></a>
+                    <a href="https://www.linkedin.com/in/mmunaf/"
+                        ><img
+                            class="socialIconTop"
+                            src="Icons/LinkedIn - Original.svg"
+                            alt=""
+                    /></a>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            function navMenuControl() {
+                if (
+                    document.getElementById("mobileNavOptions").style.display ==
+                    "none"
+                ) {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "flex";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/cross.svg");
+                } else {
+                    document.getElementById("mobileNavOptions").style.display =
+                        "none";
+                    document
+                        .getElementById("navExpandBtn")
+                        .setAttribute("src", "Icons/menu.svg");
+                }
+            }
+        </script>
+    </body>
+</html>

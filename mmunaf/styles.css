@@ -1,0 +1,903 @@
+:root {
+    --darkSecondary: #333b3d;
+    --darkPrimary: #191919;
+    --orange: #fe9a3a;
+    --whiteSecondary: #e3e3e3;
+    --whitePrimary: #ffffff;
+    --basicShadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    --basicRadius: 40px;
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.smallCaps {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.bodyText {
+    font-size: 30px;
+    font-weight: 300px;
+}
+.mainHeadingText {
+    font-size: 42px;
+    color: var(--whitePrimary);
+}
+.servicesHeadingText {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.serviceDetailsList {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 36px;
+}
+.serviceContentText {
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 0 10em;
+}
+
+body {
+    background-color: var(--darkSecondary);
+}
+
+nav#desktop {
+    background-color: var(--darkSecondary);
+    width: 100%;
+    padding: 0 10em;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    box-shadow: var(--basicShadow);
+}
+nav#desktop .leftSideNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+nav#desktop .leftSideNav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 2em;
+}
+nav#desktop .leftSideNav .navLinks a/* :not(active) */ {
+    text-decoration: none;
+    color: var(--whitePrimary);
+    padding: 2px 8px;
+    padding-bottom: 4px;
+    margin: 0 4px;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    border-bottom: 2px solid var(--darkSecondary);
+}
+nav#desktop .leftSideNav .navLinks a.active {
+    color: var(--orange);
+    border-bottom: 2px solid var(--darkSecondary);
+}
+nav#desktop .leftSideNav a.active:hover {
+    border-bottom: 2px solid var(--orange);
+}
+nav#desktop .leftSideNav a:hover {
+    border-bottom: 2px solid var(--whitePrimary);
+}
+nav#desktop .rightSideNav {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 0;
+    align-items: center;
+}
+
+nav#desktop .rightSideNav img:hover {
+    /* border-color: var(--whitePrimary); */
+    transform: scale(1.07);
+}
+nav#desktop .rightSideNav img {
+    width: 34px;
+    height: 34px;
+    padding: 2px;
+    margin-left: 12px;
+    /* border: 1px solid var(--darkSecondary); */
+    transition: 0.4s ease;
+    /* border-radius: 50%; */
+}
+
+nav#mobile {
+    height: 60px;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--basicShadow);
+    display: none;
+    width: 100%;
+}
+.mobileNavBtns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    display: none;
+    background-color: var(--darkSecondary);
+    box-shadow: var(--basicShadow);
+}
+.mobileNavBtns .navLinksMobile {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    margin: 4px 0;
+    justify-content: center;
+}
+.mobileNavBtns .navLinksMobile a:not(active) {
+    text-decoration: none;
+    color: var(--whitePrimary);
+    padding: 16px 8px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.mobileNavBtns .navLinksMobile a.active {
+    color: var(--orange);
+}
+.mobileNavBtns .socialsMobileTop {
+    display: flex;
+    margin: 10px 5em;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.mobileNavBtns .socialsMobileTop img {
+    width: 36px;
+    height: 36px;
+}
+
+@media screen and (max-width: 480px) {
+    nav#mobile {
+        display: flex;
+    }
+    nav#desktop {
+        display: none;
+    }
+}
+
+section#hero {
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    height: calc(100vh - 80px);
+}
+#hero .heroContent {
+    margin-top: 180px;
+}
+#hero .heroContent .heroBtns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 140px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#downloadProjectBtn {
+    padding: 12px 34px;
+    background-color: var(--orange);
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: var(--basicRadius);
+    color: var(--whitePrimary);
+    text-decoration: none;
+    border: 1px solid var(--orange);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#getInContactBtn {
+    display: flex;
+    align-items: center;
+    color: var(--whitePrimary);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 80px;
+    transition: 0.4s ease;
+    cursor: pointer;
+    border-bottom: 2px solid var(--darkSecondary);
+    /* transition: 0.4s ease; */
+    animation: leftToRight 0.4s ease none;
+    cursor: pointer;
+    padding-bottom: 4px;
+}
+#hero .heroPic {
+    margin-left: 4em;
+    margin-top: 4em;
+}
+#downloadProjectBtn:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--darkSecondary);
+}
+#getInContactBtn:hover {
+    border-bottom: 2px solid var(--whitePrimary);
+}
+
+section#myGoal {
+    background-color: var(--whitePrimary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section#myGoal img {
+    margin-right: 8em;
+}
+
+.horizontalLine {
+    padding: 0 6em;
+    background-color: var(--whitePrimary);
+}
+
+section#myProjects {
+    background-color: var(--whitePrimary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section#myProjects .projects,
+section#projectDetails .projects {
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.projectTemplateBig {
+    width: 540px;
+    /* height: 740px; */
+    height: 1060px;
+    background-color: #efefef;
+    border-radius: var(--basicRadius);
+    margin-bottom: 40px;
+}
+.projectTemplateSmall {
+    width: 540px;
+    height: 500px;
+    background-color: #efefef;
+    border-radius: var(--basicRadius);
+    margin-bottom: 40px;
+}
+
+.projectTemplateContent {
+    padding-top: 32px;
+    padding-left: 40px;
+    transition: 0.4s ease;
+}
+.projectTemplateContent .projectTemplateTitle {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--darkPrimary);
+}
+.projectTemplateContent .projectTemplateTags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+}
+.projectTemplateContent .projectTemplateTags p {
+    padding: 4px 16px;
+    color: var(--whitePrimary);
+    background-color: var(--orange);
+    border-radius: var(--basicRadius);
+    font-weight: 300;
+    font-size: 14px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+section#myProjects .seeAllProjectsBtn {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--darkPrimary);
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 2px solid var(--whitePrimary);
+    transition: 0.4s linear;
+    padding-bottom: 4px;
+}
+section#myProjects .seeAllProjectsBtn img {
+    filter: invert(100);
+    margin-left: 6px;
+}
+section#myProjects .seeAllProjectsBtn:hover {
+    border-bottom: 2px solid var(--darkPrimary);
+}
+
+.projectTemplateSmall,
+.projectTemplateBig {
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+.projectTemplateSmall:hover,
+.projectTemplateBig:hover {
+    transform: scale(1.01);
+}
+/* .projectTemplateSmall:hover .projectTemplateContent,
+.projectTemplateBig:hover .projectTemplateContent {
+    transform: scale(0.99);
+} */
+
+.proj1 {
+    margin-right: 20px;
+    background-image: url("Images/projj1.png");
+    background-size: cover;
+}
+.proj2 {
+    margin-left: 20px;
+    background-image: url("Images/proj2.png");
+    background-size: cover;
+}
+.proj3 {
+    margin-right: 20px;
+    background-image: url("Images/proj3.png");
+    background-size: cover;
+}
+.proj4 {
+    margin-left: 20px;
+    margin-top: -561px;
+    background-image: url("Images/proj4.png");
+    background-size: cover;
+}
+
+section#services {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--whitePrimary);
+}
+
+section#services .servicesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+#services .servicesBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: var(--whitePrimary);
+    padding: 30px 34px;
+    border-radius: var(--basicRadius);
+    width: 540px;
+    transition: 0.4s ease;
+}
+#services .servicesBox .serviceBoxContent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+#services .servicesBox .serviceBoxTitle {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--darkPrimary);
+}
+#services .servicesBox .serviceBoxPara {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--darkPrimary);
+}
+.service1 {
+    margin-right: 40px;
+}
+#services .servicesBox:hover {
+    background-color: var(--orange);
+}
+#services .servicesBox:hover .serviceBoxTitle,
+.serviceBoxPara {
+    color: var(--whitePrimary);
+}
+#services .servicesBox:hover .serviceBoxPara {
+    color: var(--whitePrimary);
+}
+
+section#about {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--whitePrimary);
+    align-items: center;
+}
+section#about .aboutContent {
+    margin-left: 6em;
+}
+
+section#contact {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: var(--whitePrimary);
+    flex-wrap: wrap;
+}
+#contact .contactTitle {
+    font-size: 62px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+#contact .contactOuterContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#contact .contactOuterContainer .contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+#contact .contactOuterContainer .contactForm form input,
+#contact .contactOuterContainer .contactForm form textarea {
+    border: none;
+    outline: none;
+    background-color: var(--darkSecondary);
+    color: var(--whitePrimary);
+    font-size: 18px;
+    font-weight: 300;
+    border-bottom: 1px solid var(--whitePrimary);
+    padding: 12px 0;
+    width: 300px;
+}
+#contact .row {
+    margin-bottom: 30px;
+}
+#contact .contactOuterContainer .contactForm form ::placeholder {
+    color: var(--whitePrimary);
+}
+#contact .contactOuterContainer .contactForm form button {
+    background-color: var(--orange);
+    color: var(--whitePrimary);
+    padding: 8px 70px;
+    border-radius: var(--basicRadius);
+    width: 200px;
+    font-size: 20px;
+    font-weight: 300;
+    outline: none;
+    border: 1px solid var(--orange);
+    margin-top: 50px;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+#contact .contactOuterContainer .contactForm form button:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--darkSecondary);
+}
+#contact .contactOuterContainer .contactForm form textarea {
+    resize: none;
+    height: 140px;
+    width: 624.39px;
+}
+#contact .contactInfoContent {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 14px 0;
+}
+#contact .whatsappContact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#contact .whatsappContact img {
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+footer {
+    margin-bottom: 40px;
+}
+footer .footerContent {
+    margin: 30px 60px;
+    justify-content: space-between;
+    color: var(--whitePrimary);
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+footer .footerContent .socialsFooter {
+    display: flex;
+    flex-direction: row;
+}
+footer .footerContent .socialsFooter img {
+    width: 36px;
+    height: 36px;
+    margin-left: 30px;
+    transition: 0.4s ease;
+}
+footer .footerContent .socialsFooter img:hover {
+    transform: scale(1.07);
+}
+/* Homepage Responsive CSS */
+@media screen and (max-width: 480px) {
+    .smallCaps {
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .bodyText {
+        font-size: 24px;
+        font-weight: 300px;
+    }
+    .mainHeadingText {
+        font-size: 24px;
+        color: var(--whitePrimary);
+    }
+    section {
+        padding: 0 2em;
+    }
+    section#hero {
+        height: 100%;
+    }
+    #hero {
+        justify-content: center;
+        height: fit-content;
+        flex-direction: column;
+    }
+    #hero .heroPic {
+        order: 1;
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    #hero .heroContent {
+        order: 2;
+        margin-top: 40px;
+    }
+    #hero .heroContent .heroBtns {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-top: 40px;
+    }
+    #getInContactBtn {
+        margin: 0;
+        /*  width: 240px; */
+        font-size: 16px;
+        background-color: var(--darkSecondary);
+    }
+    #downloadProjectBtn {
+        width: 240px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    section#myGoal,
+    section#myProjects,
+    section#services,
+    section#about,
+    section#contact,
+    .footerContent {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    section#myGoal img {
+        display: none;
+    }
+    .horizontalLine {
+        padding: 0 2em;
+        background-color: var(--whitePrimary);
+    }
+    section#myProjects .projects {
+        justify-items: center;
+    }
+    .projectTemplateBig {
+        width: 90vw;
+        height: 760px;
+        margin-bottom: 30px;
+    }
+    .projectTemplateSmall {
+        width: 90vw;
+        height: 460px;
+        margin-bottom: 30px;
+    }
+    section#myProjects .seeAllProjectsBtn {
+        justify-content: center;
+        margin: auto;
+    }
+    #services .servicesBox {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #services .servicesBox .serviceBoxContent {
+        justify-content: center;
+        margin-left: 0;
+    }
+    #services .servicesBox .serviceBoxTitle {
+        text-align: center;
+    }
+    #services .servicesBox .serviceBoxPara {
+        text-align: center;
+    }
+    section#about {
+        flex-direction: column;
+    }
+    section#about .aboutContent {
+        margin-left: 0;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    #services .servicesBox img {
+        margin-bottom: 20px;
+    }
+    #contact .contactTitle {
+        font-size: 30px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    #contact .contactOuterContainer .contactForm {
+        order: 1;
+    }
+    #contact .contactInfo {
+        order: 2;
+    }
+    #contact .contactOuterContainer .contactForm form {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    #contact .contactOuterContainer .contactForm form input {
+        margin-bottom: 30px;
+    }
+    #contact .contactOuterContainer .contactForm form input,
+    #contact .contactOuterContainer .contactForm form textarea {
+        width: 305px;
+    }
+    #contact .contactOuterContainer .contactForm form button {
+        margin-top: 30px;
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    #contact .whatsappContact {
+        display: none;
+    }
+    footer .footerContent {
+        margin: 0;
+        padding: 30px 40px;
+        flex-direction: column;
+    }
+    footer .footerContent .socialsFooter {
+        margin-top: 30px;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    footer .footerContent .socialsFooter img {
+        margin: 0;
+    }
+
+    .proj1,
+    .proj2,
+    .proj3,
+    .proj4 {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .projectTemplateContent .projectTemplateTitle {
+        font-size: 24px;
+    }
+    .projectTemplateContent .projectTemplateTags p {
+        font-size: 12px;
+        padding: 0;
+        background-color: transparent;
+        color: var(--darkPrimary);
+    }
+    .service1 {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
+
+/* Services CSS */
+section#servicesHeading {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+section#servicesDetails {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 16em;
+    justify-items: center;
+    background-color: var(--whitePrimary);
+    align-items: center;
+}
+section#servicesDetails .servicesBoxDetailed {
+    border-radius: var(--basicRadius);
+    background-color: var(--darkSecondary);
+    color: var(--whitePrimary);
+    padding: 32px 80px;
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+}
+section#servicesDetails .servicesBoxDetailed .serviceContentText {
+    width: 80%;
+}
+section#servicesDetails img {
+    height: 200px;
+    margin: auto 0;
+}
+section#servicesDetails .webDesign img {
+    order: 1;
+    margin-right: 180px;
+}
+section#servicesDetails .webDesign .servicesBoxDetailedContent {
+    order: 2;
+}
+section#servicesDetails
+    .webDesign
+    .servicesBoxDetailedContent
+    .serviceContentText {
+    width: 100%;
+}
+section#projectDetails {
+    background-color: var(--whitePrimary);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+}
+section#projectDetails .catBtnText {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--darkPrimary);
+    margin: 0 auto;
+}
+section#projectDetails .catBtn {
+    width: 16vw;
+    border-bottom: 2px solid var(--whiteSecondary);
+    padding-bottom: 24px;
+    display: flex;
+    cursor: pointer;
+}
+section#projectDetails .catBtn:hover .catBtnText {
+    color: var(--orange);
+}
+section#projectDetails .current {
+    border-bottom: 2px solid var(--orange);
+}
+section#projectDetails .projectCatSelector {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+/* section#projectDetails .projectCatMobileSelector {
+  display: flex;
+}
+section#projectDetails .projectCatMobileSelector select {
+  /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; */
+/*width: 95vw;
+  padding: 12px 30px;
+  border: none;
+  outline: none;
+  background-color: var(--orange);
+  border-radius: var(--basicRadius);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--whitePrimary);
+} */
+section#projectDetails .projectCatMobileSelector {
+    display: flex;
+    justify-content: center;
+    border-radius: var(--basicRadius);
+    background-color: var(--orange);
+    display: none;
+}
+section#projectDetails .projectCatMobileSelector select {
+    /* -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; */
+    padding: 12px 30px;
+    width: 90%;
+    border: none;
+    outline: none;
+    background-color: var(--orange);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: var(--basicRadius);
+    color: var(--whitePrimary);
+}
+
+@media screen and (max-width: 480px) {
+    .servicesHeadingText {
+        font-size: 26px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .serviceDetailsList {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 36px;
+    }
+    .serviceContentText {
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 14px;
+        margin-bottom: 20px;
+    }
+    section#servicesHeading {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    section#servicesDetails .servicesBoxDetailed {
+        margin: 10px 0;
+        flex-direction: column;
+        padding: 36px 26px;
+        align-items: center;
+        justify-items: center;
+    }
+    section#servicesDetails {
+        padding: 30px 2em;
+    }
+    section#servicesDetails .servicesBoxDetailed .servicesBoxDetailedContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        order: 2;
+    }
+    section#servicesDetails img {
+        height: 80px;
+        order: 1;
+        margin-bottom: 30px;
+    }
+    section#servicesDetails .webDesign img {
+        margin-right: 0px;
+    }
+    section#projectDetails .projectCatSelector {
+        display: none;
+    }
+    section#projectDetails .projects {
+        margin-top: 30px;
+    }
+    section#projectDetails .projectCatMobileSelector {
+        display: flex;
+    }
+}

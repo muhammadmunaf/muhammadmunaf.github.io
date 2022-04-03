@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <!-- for responsive design below -->
+    <link rel="stylesheet" media="screen and (min-width: 861px)" href="style-header_footer.css" />
+    <link rel="stylesheet" media="screen and (min-width: 861px)" href="style.css" />
+
+    <link rel="stylesheet" media="screen and (max-width: 860px)" href="responsive.css" />
+    
+    <!-- <link rel="stylesheet" href="responsive.css" />  -->
+
+</head>
+<body>
+    <header>
+        <div id="name" style="margin-left: 40px;">
+            <a href="#">Name Here</a>
+        </div>
+
+        <div class="topbtn">
+            <a href="index-responsive.html">About Me</a>
+        </div>
+        <div class="topbtn">
+            <a href="portfolio-responsive.html">Portfolio</a>
+        </div>
+        <div class="topbtn">
+            <a href="">Services</a>
+        </div>
+        <div class="topbtn">
+            <a href="testimonials-responsive.html">Testimonials</a>
+        </div>
+        <div class="topbtn" style="margin-right: 40px;">
+            <a href="contact-responsive.html" style="color: #b1a59a;">Contact</a>
+        </div>
+
+        <div class="topNav">
+            <a class="topNav-btn"><img src="Images/menu.png" alt="" width="32px"></a>
+            <div class="topNav-content">
+                <a href="index-responsive.html">About Me</a>
+                <a href="portfolio-responsive.html">Portfolio</a>
+                <a href="">Services</a>
+                <a href="testimonials-responsive.html" >Testimonials</a>
+                <a href="contact-responsive.html" style="color: #b1a59a;">Contact</a>
+            </div> 
+        </div> 
+    </header>
+
+    <div class="mainBodyContact">
+        
+        <div id="contactTitle">
+            <h2 >Let's Talk</h2>
+        </div>
+
+        <div class="line-container" style="justify-content: space-evenly;">
+            <div class="emptyLine"></div>
+            <div class="line"></div>
+            <div class="emptyLine"></div>
+        </div>
+
+        <div class="forms-container">
+
+            <form action="" class="contactForm">
+                <input type="text" name="name" value="Name" onfocus=this.value=''>
+                <input type="text" name="email" value="Email" onfocus=this.value=''>
+                <input type="text" name="subject" value="Subject" onfocus=this.value=''>
+                <input type="text"  name="message" value="Message" id="msgBox" onfocus=this.value=''>
+                <!-- <textarea name="comment" form=".contactForm" id="msgBox" onfocus=this.value=''> Message</textarea> -->
+                <input type="submit" id="send-btn" value="Send">
+            </form>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="copyright">
+            <p>© 2023 by Name Here</p>
+        </div>
+        <div id="call" class="contactBox">
+            <h3>Call</h3>
+            <p>+92 364 89624680</p>
+        </div>
+        <div id="write" class="contactBox">
+            <h3>Write</h3>
+            <!-- <p>info@gmail.com</p> -->
+            <a href="mailto:info@gmail.com">info@gmail.com</a>
+        </div>
+        <div id="follow" class="contactBox">
+            <h3>Follow</h3>
+            <div class="socials" style="justify-content: center;">
+                <a href="" class="fb"></a>
+                <a href="" class="insta"></a>
+                <a href="" class="twitter"></a>
+                <a href="" class="linkedin"></a>
+            </div>
+        </div>
+
+        <div id="copyright-bottom">
+            <p>© 2023 by Name Here</p>
+        </div>
+    </footer>
+
+</body>
+</html>
