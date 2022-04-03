@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="style-extra.css">
+    <link rel="stylesheet" href="Fonts/stylesheet.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section class="main-container">
+        <div class="left">
+            <div class="logo-bar">
+                <img src="icons/Logo-Black.svg">
+                <h4>Dashnect</h4>
+            </div>
+            <h2>Welcome</h2>
+            <p id="have-account">Already have an account?</p>
+            <a id="login-btn" href="login.html">Login</a>
+        </div>
+
+        <div class="right">
+            <h3>Create an Account</h3>
+
+            <form action="">
+                <input type="text" name="name" value="Name" onfocus="this.value=''">
+                <input type="email" name="email" value="Email" onfocus="this.value=''">
+                <input id="password" type="password" name="password" value="Password" onfocus="this.value=''" onkeypress="passwordValidation()">
+
+                <p>Password Must: </p>
+                <ul>
+                    <li id="min-8">Be minimum of 8 characters</li>
+                    <li id="lowercase">Include at least one lowercase (a - z)</li>
+                    <li id="uppercase">Include at least one uppercase (A - Z)</li>
+                    <li id="digit">Include at least one digit (0 - 9)</li>
+                    <li id="special">Include at least one special character (@, !, $, etc.)</li>
+                </ul>
+
+                <input id="submit" type="submit" value="Sign Up" disabled="disabled">
+            </form>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="scripts/passwordvalidation.js"></script>
+</body>
+</html>

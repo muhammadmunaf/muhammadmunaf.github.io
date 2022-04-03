@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashnect</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Fonts/stylesheet.css">
+
+    <!-- Favicon below -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="main">
+        <section id="side-menu">
+            <div id="logo">
+                <img src="icons/Logo-Dark.svg">
+                <p style="padding-left: 18px;">Dashnect</p>
+            </div>
+
+            <div id="nav-btns">
+                <a class="nav-btn" style="opacity: 1;">
+                    <img src="icons/Overview.svg">
+                    <p>Overview</p>
+                </a>
+                <a class="nav-btn" href="timeline.html">
+                    <img src="icons/Timeline.svg">
+                    <p>Timeline</p>
+                </a>
+                <a class="nav-btn" href="tasks.html">
+                    <img src="icons/Tasks.svg">
+                    <p>Tasks</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Settings.svg">
+                    <p>Settings</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Messages.svg">
+                    <p>Messages</p>
+                </a>
+                <a class="nav-btn" href="files.html">
+                    <img src="icons/Files.svg">
+                    <p>Files</p>
+                </a>
+            </div>
+
+            <a id="logout">
+                <img src="icons/Power.svg" alt="">
+                <p>Logout</p>
+            </a>
+        </section>
+
+        <section id="overview">
+            <div id="topbar">
+                <div class="right">
+                    <h2>Overview</h2>
+                    <form action="">
+                        <img src="icons/Search.svg" alt="" width="16px" >
+                        <input type="test" name="search" value="Search" onfocus="this.value=''">
+                    </form>
+                </div>
+
+                <div class="left">
+                    <a class="help-icon">
+                        <img src="icons/Help.svg" alt="" width="16px">
+                    </a>
+                    <a class="add-icon">
+                        <img src="icons/Plus.svg" alt="">
+                    </a>
+                    
+                    <img src="icons/Notifications.svg" id="notification-icon">
+                    <img src="images/profile-image.png" id="profile-img">
+                    
+                    <a href="" id="arrow-down-profile">
+                        <p>Jason</p>
+                        <img src="icons/Arrow-Down.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="content">
+                <div id="right-side">
+                    <div id="blocks">
+                        <div class="tasks" style="margin-right: 30px">
+                            <p>Tasks</p>
+                            <div class="block">
+                                <img src="icons/Gallery.svg" alt="">
+                                <div class="text">
+                                    <h3>718+</h3>
+                                    <p><b>+11% more</b> than last year</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-project">
+                            <p>Current Project</p>
+                            <div class="block">
+                                <img src="icons/Loading.svg" alt="">
+                                <div class="text">
+                                    <span><h3>45</h3> /121</span>
+                                    <p>You completed over <b>37%</b> tasks. <br><b>Keep it up!</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="graph">
+                        <div class="top">
+                            <p>Tasks Done</p>
+                            <div class="time-period">
+                                <p>1d</p><p>1w</p><p>1m</p><p>1y</p>
+                            </div>
+                        </div>
+                        <div id="main-graph">
+                            <div id="y-axis">
+                                <p>90</p><p>60</p><p>30</p><p>0</p>
+                            </div>
+                            <div id="graph-plot">
+                                <img src="icons/Graph.svg" alt="">
+                            </div>
+                        </div>
+                        <div id="x-axis">
+                            <p>Apr</p><p>May</p><p>Jun</p><p>Jul</p><p>Aug</p><p>Sep</p><p>Oct</p><p>Nov</p><p>Dec</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="side-view">
+                    <div id="side-blocks">
+                        <div class="files-block" style="margin-right:30px">
+                            <img src="icons/People.svg" alt="">
+                            <h4>Company Files</h4>
+                            <p>57 files</p>
+                        </div>
+                        <div class="files-block">
+                            <img src="icons/Dribbble.svg" alt="">  
+                            <h4>Dribble Assets</h4>
+                            <p>25 files</p>
+                        </div> 
+                    </div>
+
+                    <div id="project-box">
+                        <div class="project-top">
+                            <p>April 21, 2021</p>
+                            <img src="icons/More.svg" alt="">
+                        </div>
+                        <div id="project-title">
+                            <h3>Mobile App</h3>
+                            <p>Cryptocurrency</p>
+                        </div>
+
+                        <div id="project-progress">
+                            <div id="progress-text">
+                                <h3>Progress</h3><p>50%</p>
+                            </div>
+                            <div id="progressbar">
+                                <div id="project-done"></div>
+                            </div>
+                        </div>
+
+                        <div id="project-details">
+                            <div id="team">
+                                <img src="Images/Avatar-1.png" id="team-1">
+                                <img src="Images/Avatar-2.png" id="team-2">
+                                <img src="Images/Avatar-3.png" id="team-3">
+                                <a href="" ><img id="team-add"src="icons/Plus-black.svg"></a>
+                            </div>
+                            <div id="time-left">
+                                <p>3 weeks left</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

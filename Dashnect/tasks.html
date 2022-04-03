@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashnect</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Fonts/stylesheet.css">
+
+    <!-- Favicon below -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="main">
+        <section id="side-menu">
+            <div id="logo">
+                <img src="icons/Logo-Dark.svg">
+                <p style="padding-left: 18px;">Dashnect</p>
+            </div>
+
+            <div id="nav-btns">
+                <a class="nav-btn" href="index.html">
+                    <img src="icons/Overview.svg">
+                    <p>Overview</p>
+                </a>
+                <a class="nav-btn" href="timeline.html">
+                    <img src="icons/Timeline.svg">
+                    <p>Timeline</p>
+                </a>
+                <a class="nav-btn" style="opacity: 1;">
+                    <img src="icons/Tasks.svg">
+                    <p>Tasks</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Settings.svg">
+                    <p>Settings</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Messages.svg">
+                    <p>Messages</p>
+                </a>
+                <a class="nav-btn" href="files.html">
+                    <img src="icons/Files.svg">
+                    <p>Files</p>
+                </a>
+            </div>
+
+            <a id="logout">
+                <img src="icons/Power.svg" alt="">
+                <p>Logout</p>
+            </a>
+        </section>
+
+        <section id="overview" style="height: auto;">
+            <div id="topbar">
+                <div class="right">
+                    <h2>Tasks</h2>
+                    <form action="">
+                        <img src="icons/Search.svg" alt="" width="16px" >
+                        <input type="test" name="search" value="Search" onfocus="this.value=''">
+                    </form>
+                </div>
+
+                <div class="left">
+                    <a class="help-icon">
+                        <img src="icons/Help.svg" alt="" width="16px">
+                    </a>
+                    <a class="add-icon" onclick="showPopup()">
+                        <img src="icons/Plus.svg" alt="" >
+                    </a>
+                    
+                    <img src="icons/Notifications.svg" id="notification-icon">
+                    <img src="images/profile-image.png" id="profile-img">
+                    
+                    <a href="" id="arrow-down-profile">
+                        <p>Jason</p>
+                        <img src="icons/Arrow-Down.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="content-tasks">
+                <div class="tasks-column" id="to-do">
+                    <div class="column-title">
+                        <div class="circle"></div>
+                        <h3>To Do</h3>
+                    </div>
+
+                    <div class="tasks-list" id>
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                                <img src="Images/test-img.png" alt="">
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tasks-column" id="in-progress">
+                    <div class="column-title">
+                        <div class="circle" style="background-color: #F24E1E;"></div>
+                        <h3>In Progress</h3>
+                    </div>
+
+                    <div class="tasks-list">
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                                <img src="Images/test-img.png" alt="">
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                                <img src="" alt="">
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tasks-column" id="review">
+                    <div class="column-title">
+                        <div class="circle" style="background-color: #0ACF83;"></div>
+                        <h3>Review</h3>
+                    </div>
+
+                    <div class="tasks-list">
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                                
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                                <img src="Images/test-img-3.jpg" alt="">
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="tasks-column" style="margin-right: 0px;" id="done">
+                    <div class="column-title">
+                        <div class="circle" style="background-color: #A259FF;"></div>
+                        <h3>Done</h3>
+                    </div>
+
+                    <div class="tasks-list">
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                                <img src="Images/test-img-2.jpeg" alt="">
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="task-box">
+                            <div class="upper">
+                                <p>17/18 May</p>
+                                <img src="icons/More.svg" alt="" style="transform: rotate(90deg);">
+                            </div>
+
+                            <div class="middle">
+                                <p>[Company] - Presentation for new clients</p>
+                            </div>
+
+                            <div class="lower">
+                                <div class="comments">
+                                    <img src="icons/Comments.svg" alt="">
+                                    <p>4</p>
+                                </div>
+                                <div class="attachments">
+                                    <img src="icons/Paperclip.svg" alt="">
+                                    <p>3</p>
+                                </div>
+                                <div class="task-members">
+                                    <img src="Images/Avatar-1.png" alt="" style="margin-right: -10px;">
+                                    <img src="Images/Avatar-2.png" alt="" style="margin-right: -10px;">
+                                    <a href=""><img src="icons/Plus.svg" alt="" id="task-member-add"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="popup-addtask">
+        <div class="main-popup">
+            <h2>Add Task</h2>
+            <form action="">
+                <p for="task-description">Description:
+                    <textarea name="task-description" id="task-description" onfocus="this.value=''" ></textarea></p>
+                <p for="task-date">Date:
+                <input type="text" name="task-date" id="task-date" value="" onfocus="this.value=''" style="height: auto;margin-left: 48px"></p>
+            </form>
+
+            <div id="task-type">
+                <div class="type">
+                    <label for="taskType-toDo">To Do</label>
+                    <input type="radio" id="taskType-toDo" name="task-type" value="JavaScript" onclick="addColor(this)">
+                </div>
+                <div class="type">
+                    <label for="taskType-inProgress">In Progress</label>
+                    <input type="radio" id="taskType-inProgress" name="task-type" value="JavaScript" onclick="addColor(this)">
+                </div>
+                <div class="type">
+                    <label for="taskType-Review">Review</label>
+                    <input type="radio" id="taskType-review" name="task-type" value="JavaScript" onclick="addColor(this)">
+                </div>
+                <div class="type">
+                    <label for="taskType-done">Done</label>
+                    <input type="radio" id="taskType-done" name="task-type" value="JavaScript" onclick="addColor(this)">
+                </div>
+                
+            </div>
+            
+            <div class="buttons">
+                <button onclick="closePopup()">Cancel</button>
+                <button id="save-popup-data" onclick="checkInput()">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        console.log("starting");
+        var images = document.getElementsByTagName('img')
+
+        for(let i=0; i<images.length; i++)
+        {
+            let thisImg = images[i];
+            if(thisImg.getAttribute('src') == "")
+            {
+                thisImg.style.display = 'none';
+            }
+        }
+    </script>
+
+    <script src="scripts/addnewtasks.js"></script>
+</body>
+</html>

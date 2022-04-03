@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashnect</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Fonts/stylesheet.css">
+
+    <!-- Favicon below -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="main">
+        <section id="side-menu">
+            <div id="logo">
+                <img src="icons/Logo-Dark.svg">
+                <p style="padding-left: 18px;">Dashnect</p>
+            </div>
+
+            <div id="nav-btns">
+                <a class="nav-btn" href="index.html">
+                    <img src="icons/Overview.svg">
+                    <p>Overview</p>
+                </a>
+                <a class="nav-btn"  style="opacity: 1;">
+                    <img src="icons/Timeline.svg">
+                    <p>Timeline</p>
+                </a>
+                <a class="nav-btn" href="tasks.html">
+                    <img src="icons/Tasks.svg">
+                    <p>Tasks</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Settings.svg">
+                    <p>Settings</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Messages.svg">
+                    <p>Messages</p>
+                </a>
+                <a class="nav-btn" href="files.html">
+                    <img src="icons/Files.svg">
+                    <p>Files</p>
+                </a>
+            </div>
+
+            <a id="logout">
+                <img src="icons/Power.svg" alt="">
+                <p>Logout</p>
+            </a>
+        </section>
+
+        <section id="overview">
+            <div id="topbar">
+                <div class="right">
+                    <h2>Timeline</h2>
+                    <form action="">
+                        <img src="icons/Search.svg" alt="" width="16px" >
+                        <input type="test" name="search" value="Search" onfocus="this.value=''">
+                    </form>
+                </div>
+
+                <div class="left">
+                    <a class="help-icon">
+                        <img src="icons/Help.svg" alt="" width="16px">
+                    </a>
+                    <a class="add-icon">
+                        <img src="icons/Plus.svg" alt="">
+                    </a>
+                    
+                    <img src="icons/Notifications.svg" id="notification-icon">
+                    <img src="images/profile-image.png" id="profile-img">
+                    
+                    <a href="" id="arrow-down-profile">
+                        <p>Jason</p>
+                        <img src="icons/Arrow-Down.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="content-timeline">
+                <div id="top-timeline">
+                    <img src="images/test-img.png" alt="">
+                    <div id="text-timeline-top">
+                        <h3>Jibby Redesign</h3>
+                        <div id="progress-timeline-top">
+                            <p>58%</p>
+                            <div class="bar-top-timeline">
+                                <div class="completetion-bar-top-timeline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <button class="invite-btn">
+                            <img src="icons/Plus-black.svg" alt="">
+                            <p>Invite</p>
+                        </button>
+
+                        <div id="team-timeline-top">
+                            <img src="Images/Avatar-1.png" alt="">
+                            <img src="Images/Avatar-2.png" alt="">
+                            <img src="Images/Avatar-3.png" alt="" style="margin-right: 0px;">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="timeline-options">
+                    <h4 style="margin-right: 14px;">May 2021</h4>
+                    <img src="icons/Arrow-Down.svg" style="transform: rotate(90deg);">
+                    <img src="icons/arrow-down.svg" style="transform: rotate(-90deg);">
+
+                    <div class="right">
+                        <p>Sort By</p>
+                        <h4 style="margin-right: 6px;">Day</h4>
+                        <img src="icons/Arrow-Down.svg" alt="">
+                    </div>
+                </div>
+
+                <div id="main-timeline">
+                    <div id="grid-timeline">
+                        <div class="date-columns active">
+                            <span>M <p> 05</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>T <p> 06</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>W <p>07</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>T <p>08</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>F <p>09</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>S <p>10</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>S <p>11</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>M <p> 12</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>T <p> 13</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>W <p>14</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>T <p>15</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>F <p>16</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>S <p>17</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>S <p>18</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>M <p> 12</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>T <p> 13</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>W <p>14</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>T <p>15</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>F <p>16</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>S <p>17</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        <div class="date-columns">
+                            <span>S <p>18</p></span>
+                            <div class="line-dashed"></div>
+                        </div>
+                        
+
+                    </div>
+
+                    <!-- <div id="timeline-index">
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                        <span>M <p> 05</p></span>
+                    </div> -->
+
+                    <div id="timetasks">
+                        <div class="row">
+                            <div class="task-on-timeline" onclick="showPopup(this)">
+                                <div class="task-on-timeline-done" >
+                                    <img class="circle" src="icons/timeline-point.svg">
+                                    <p>New</p>
+                                </div>
+                                <p class="percent">48%</p>
+                                <img src="icons/Arrow-Down.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="task-on-timeline" onclick="showPopup(this)">
+                                <div class="task-on-timeline-done">
+                                    <img class="circle" src="icons/timeline-point.svg">
+                                    <p>Profile</p>
+                                </div>
+                                <p class="percent">48%</p>
+                                <img src="icons/Arrow-Down.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="task-on-timeline" onclick="showPopup(this)">
+                                <div class="task-on-timeline-done">
+                                    <img class="circle" src="icons/timeline-point.svg">
+                                    <p>Profile</p>
+                                </div>
+                                <p class="percent">48%</p>
+                                <img src="icons/Arrow-Down.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="task-on-timeline" onclick="showPopup(this)">
+                                <div class="task-on-timeline-done">
+                                    <img class="circle" src="icons/timeline-point.svg">
+                                    <p>Profile</p>
+                                </div>
+                                <p class="percent">48%</p>
+                                <img src="icons/Arrow-Down.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="task-on-timeline" onclick="showPopup(this)">
+                                <div class="task-on-timeline-done">
+                                    <img class="circle" src="icons/timeline-point.svg">
+                                    <p>Profile</p>
+                                </div>
+                                <p class="percent">48%</p>
+                                <img src="icons/Arrow-Down.svg" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div id="date-now" onclick="moveOne()">
+                        <div class="circle"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+
+                <div id="popup-timetask">
+                    <div class="main-popup">
+                        <div id="task-title"><p>Task:</p> <h4>Profile</h4></div>
+
+                        <p>Set Dates</p>
+                        <form action="">
+
+                            <input type="text" id="start-day" value="1" onfocus="this.value=''">
+                            <img src="icons/arrow-right.svg" alt="">
+                            <input type="text" id="end-day" value="31" onfocus="this.value=''">
+
+                            
+                        </form>
+
+                        <div id="task-type">
+                            <div class="type">
+                                <label for="taskType-toDo">To Do</label>
+                                <input type="radio" id="taskType-toDo" name="task-type" value="JavaScript" onclick="addColor(this)">
+                            </div>
+                            <div class="type">
+                                <label for="taskType-inProgress">In Progress</label>
+                                <input type="radio" id="taskType-inProgress" name="task-type" value="JavaScript" onclick="addColor(this)">
+                            </div>
+                            <div class="type">
+                                <label for="taskType-Review">Review</label>
+                                <input type="radio" id="taskType-review" name="task-type" value="JavaScript" onclick="addColor(this)">
+                            </div>
+                            <div class="type">
+                                <label for="taskType-done">Done</label>
+                                <input type="radio" id="taskType-done" name="task-type" value="JavaScript" onclick="addColor(this)">
+                            </div>
+                            
+                        </div>
+                        
+
+                        <div class="progress-task-popup"><p>Progress Percentage</p><h3 id="progress-output" style="margin-left: auto;font-size: 18px;">50%</h3></div>
+                        <input type="range" id="progress" min="0" max="100" id="completion" oninput="progressOutput()">
+                        
+                        <div class="buttons">
+                            <button onclick="closePopup()">Cancel</button>
+                            <button id="save-popup-data" onclick="checkInput()">Save</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <script type="text/javascript" src="scripts/horizontalDrag.js"></script>  
+    
+    <script type="text/javascript" src="scripts/timetaskscontrol.js"></script>
+    
+</body>
+</html>

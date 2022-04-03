@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashnect</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Fonts/stylesheet.css">
+
+    <!-- Favicon below -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/site.webmanifest">
+    <link rel="mask-icon" href="icons/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="main">
+        <section id="side-menu">
+            <div id="logo">
+                <img src="icons/Logo-Dark.svg">
+                <p style="padding-left: 18px;">Dashnect</p>
+            </div>
+
+            <div id="nav-btns">
+                <a class="nav-btn" href="index.html">
+                    <img src="icons/Overview.svg">
+                    <p>Overview</p>
+                </a>
+                <a class="nav-btn" href="timeline.html">
+                    <img src="icons/Timeline.svg">
+                    <p>Timeline</p>
+                </a>
+                <a class="nav-btn" href="tasks.html">
+                    <img src="icons/Tasks.svg">
+                    <p>Tasks</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Settings.svg">
+                    <p>Settings</p>
+                </a>
+                <a class="nav-btn">
+                    <img src="icons/Messages.svg">
+                    <p>Messages</p>
+                </a>
+                <a class="nav-btn"  style="opacity: 1;">
+                    <img src="icons/Files.svg">
+                    <p>Files</p>
+                </a>
+            </div>
+
+            <a id="logout">
+                <img src="icons/Power.svg" alt="">
+                <p>Logout</p>
+            </a>
+        </section>
+
+        <section id="overview" style="height: auto;">
+            <div id="topbar">
+                <div class="right">
+                    <h2>Files</h2>
+                    <form action="">
+                        <img src="icons/Search.svg" alt="" width="16px" >
+                        <input type="test" name="search" value="Search" onfocus="this.value=''">
+                    </form>
+                </div>
+
+                <div class="left">
+                    <a class="help-icon">
+                        <img src="icons/Help.svg" alt="" width="16px">
+                    </a>
+                    <a class="add-icon">
+                        <img src="icons/Plus.svg" alt="">
+                    </a>
+                    
+                    <img src="icons/Notifications.svg" id="notification-icon">
+                    <img src="images/profile-image.png" id="profile-img">
+                    
+                    <a href="" id="arrow-down-profile">
+                        <p>Jason</p>
+                        <img src="icons/Arrow-Down.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+            <div id="content-files">
+                <div id="top-section">
+                    <button id="create-folder-btn"><img id="create-folder-icon" src="Icons/Plus-square.svg" alt="">Create New Folder</button>
+
+                    <button id="upload-btn"><img src="Icons/Upload.svg" id="upload-icon">Upload</button>
+
+                    <div class="right">
+                        <a href="" style="opacity: 1;"><img src="icons/grid.svg" alt=""></a>
+                        <a href="" style="opacity: 0.4;"><img src="icons/rows-vertical.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="main-files"> 
+
+                    <div id="quick-access">
+                        <h3>Quick Access</h3>
+
+                        <div id="quick-access-files">
+
+                            <div class="file-box">
+                                <div class="left">
+                                    <img src="icons/Folder.svg" style="filter: invert(75%) sepia(45%) saturate(6964%) hue-rotate(171deg) brightness(106%) contrast(102%);">
+                                    <h3>Documents</h3>
+                                    <p>89 files</p>
+                                </div>
+
+                                <div class="right">
+                                    <img src="icons/More.svg" alt="">
+                                    <p style="text-align: right;margin-top: auto;">48 MB</p>
+                                </div>
+                            </div>
+
+                            <div class="file-box">
+                                <div class="left">
+                                    <img src="icons/Folder.svg" style="filter: invert(39%) sepia(75%) saturate(2357%) hue-rotate(241deg) brightness(100%) contrast(105%);">
+                                    <h3>Briefs</h3>
+                                    <p>67 files</p>
+                                </div>
+
+                                <div class="right">
+                                    <img src="icons/More.svg" alt="">
+                                    <p style="text-align: right;margin-top: auto;">54 Mb</p>
+                                </div>
+                            </div>
+
+                            <div class="file-box">
+                                <div class="left">
+                                    <img src="icons/Folder.svg" style="filter: invert(59%) sepia(59%) saturate(2127%) hue-rotate(113deg) brightness(99%) contrast(92%);" >
+                                    <h3>Estimates</h3>
+                                    <p>34 files</p>
+                                </div>
+
+                                <div class="right">
+                                    <img src="icons/More.svg" alt="">
+                                    <p style="text-align: right;margin-top: auto;">82 Mb</p>
+                                </div>
+                            </div>
+
+                            <div class="file-box">
+                                <div class="left">
+                                    <img src="icons/Folder.svg" style="filter: invert(41%) sepia(75%) saturate(3824%) hue-rotate(351deg) brightness(98%) contrast(94%);">
+                                    <h3>Calculations</h3>
+                                    <p>61 files</p>
+                                </div>
+
+                                <div class="right">
+                                    <img src="icons/More.svg" alt="">
+                                    <p style="text-align: right;margin-top: auto;">31 Mb</p>
+                                </div>
+                            </div>
+
+                            <div class="upload-box">
+                                <div class="top">
+                                    <h3>Uploading 1 file</h3>
+                                    <img src="icons/Pause.svg" alt="">
+                                </div>
+
+                                <div class="upload-progress">
+                                    <div class="completion"></div>
+                                </div>
+
+                                <div class="mid">
+                                    <p>business_requirment...</p>
+                                    <h4 style="margin-left: auto;">58%</h4>
+                                </div>
+                                <div class="lower" style="margin-top: auto;">
+                                    <p>1.8 Mb</p>
+                                </div>
+                            </div>
+
+                            <div id="new-folder">
+                                <a><img src="icons/Plus-black.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="recent-files">
+                        <div class="top">
+                            <h3>Recent Files</h3>
+                            <img id="recent-files-arrow" src="icons/arrow-right.svg">
+                        </div>
+
+                        <div class="files-container">
+
+                            <div class="file-recents">
+                                <img src="icons/Extras/Microsoft-Word-02.svg" alt="">
+                                <div class="text">
+                                    <h5>brief.doc</h5>
+                                    <p>24.02.2021</p>
+                                </div>
+                                <h4>5Mb</h4>
+                            </div>
+
+                            <div class="file-recents">
+                                <img src="icons/Extras/Microsoft-Word-02.svg" alt="">
+                                <div class="text">
+                                    <h5>brief.doc</h5>
+                                    <p>24.02.2021</p>
+                                </div>
+                                <h4>5Mb</h4>
+                            </div>
+
+                            <div class="file-recents">
+                                <img src="icons/Extras/Microsoft-Word-02.svg" alt="">
+                                <div class="text">
+                                    <h5>brief.doc</h5>
+                                    <p>24.02.2021</p>
+                                </div>
+                                <h4>5Mb</h4>
+                            </div>
+
+                            <div class="file-recents">
+                                <img src="icons/Extras/Microsoft-Word-02.svg" alt="">
+                                <div class="text">
+                                    <h5>brief.doc</h5>
+                                    <p>24.02.2021</p>
+                                </div>
+                                <h4>5Mb</h4>
+                            </div>
+
+                            <div class="file-recents">
+                                <img src="icons/Extras/Microsoft-Word-02.svg" alt="">
+                                <div class="text">
+                                    <h5>brief.doc</h5>
+                                    <p>24.02.2021</p>
+                                </div>
+                                <h4>5Mb</h4>
+                            </div>
+
+                            <div class="file-recents">
+                                <img src="icons/Extras/Microsoft-Word-02.svg" alt="">
+                                <div class="text">
+                                    <h5>brief.doc</h5>
+                                    <p>24.02.2021</p>
+                                </div>
+                                <h4>5Mb</h4>
+                            </div>
+
+                            <div class="file-recents">
+                                <img src="icons/Extras/Microsoft-Word-02.svg" alt="">
+                                <div class="text">
+                                    <h5>brief.doc</h5>
+                                    <p>24.02.2021</p>
+                                </div>
+                                <h4>5Mb</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="storage">
+                        <div id="storage-graph">
+                            <!-- <div class="plots">
+                                <div class="photos"></div>
+                                <div class="docs"></div>
+                                <div class="sheets"></div>
+                            </div>
+                            <div class="info">
+                                <div class="photos">
+                                    <div class="circle"></div>
+                                    <h4>Photos</h4>
+                                </div>
+                                <div class="docs">
+                                    <div class="circle"></div>
+                                    <h4>Documents</h4>
+                                </div>
+                                <div class="sheets">
+                                    <div class="circle"></div>
+                                    <h4>Sheets</h4>
+                                </div>
+                            </div> -->
+
+                            <div class="storage-column">
+                                <div class="graph" style="height: 125px;background-color: #1abcfe;""></div>
+                                <div class="info">
+                                    <div class="circle" style="background-color: #1abcfe;"></div>
+                                    <h4>Photos</h4>
+                                </div>
+                                <div class="size">
+                                    <p>33GB</p>
+                                </div>
+                            </div>
+
+                            <div class="storage-column">
+                                <div class="graph" style="height: 160px;background-color: #f24e1e;""></div>
+                                <div class="info">
+                                    <div class="circle" style="background-color: #f24e1e;"></div>
+                                    <h4>Documents</h4>
+                                </div>
+                                <div class="size">
+                                    <p>42GB</p>
+                                </div>
+                            </div>
+
+                            <div class="storage-column">
+                                <div class="graph" style="height: 96px; background-color: #0acf83;"></div>
+                                <div class="info">
+                                    <div class="circle" style="background-color: #0acf83;"></div>
+                                    <h4>Sheets</h4>
+                                </div>
+                                <div class="size">
+                                    <p>25GB</p>
+                                </div>
+                            </div>
+
+                            <!-- <div class="info" id="info-size" >
+                                    <h4 style="margin-right: auto;">21GB</h4>
+                                    <h4>34GB</h4>
+                                    <h4 style="margin-left: auto;">12GB</h4>
+                            </div> -->
+                        </div>
+
+                        <div id="storage-info">
+                            <div class="pie">
+                                <img class="circle-pie" src="icons/pie-chart-bold.svg">
+                                <p>67%</p>
+                            </div>
+                            <div class="side">
+                                <p>Availiable Space</p>
+                                <h4>14GB</h4>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
