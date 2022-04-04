@@ -64,18 +64,19 @@
         </section>
 
         <section id="comments">
-            <h4>Comments</h4>
+            <h4 class="commentTitle">Comments</h4>
             <div class="addComment">
-                <form class="unactiveComment">
+                <form class="unactiveComment" id="unactiveComment">
                     <input
                         type="text"
                         name=""
                         placeholder="What are your thoughts?"
                         id=""
+                        onclick="showComment()"
                     />
                 </form>
 
-                <form action="" class="activeComment">
+                <form action="" class="activeComment" id="activeComment">
                     <div class="userCommentProfile">
                         <img
                             src="imgs/temp_img.png"
@@ -85,9 +86,18 @@
                         <h4>User Name</h4>
                     </div>
 
-                    <textarea rows="4">Add your thoughts here</textarea>
+                    <textarea
+                        rows="4"
+                        autofocus
+                        placeholder="Add your thoughts here"
+                    ></textarea>
 
-                    <button type="submit" class="respond">Respond</button>
+                    <div style="display: flex; justify-content: flex-end">
+                        <button class="cancelBtn" onclick="unShowComment()">
+                            Cancel
+                        </button>
+                        <button type="submit" class="respond">Respond</button>
+                    </div>
                 </form>
             </div>
             <div class="previousComments">
@@ -99,8 +109,18 @@
                             <p>12 days ago</p>
                         </div>
                     </div>
-                    <p class="commentText">this is a sampel text</p>
+                    <p class="commentText">this is a sample text</p>
                     <button class="commentReplyBtn">Reply</button>
+                    <div class="commentReply">
+                        <div class="oldCommentUser">
+                            <img src="imgs/temp_img.png" alt="" />
+                            <div>
+                                <h4>Name Here</h4>
+                                <p>12 days ago</p>
+                            </div>
+                        </div>
+                        <p class="commentText">this is a sample reply</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -150,6 +170,18 @@
                         .getElementById("navExpandBtn")
                         .setAttribute("src", "imgs/menu.svg");
                 }
+            }
+
+            function showComment() {
+                document.getElementById("activeComment").style.display = "flex";
+                document.getElementById("unactiveComment").style.display =
+                    "none";
+            }
+
+            function unShowComment() {
+                document.getElementById("activeComment").style.display = "none";
+                document.getElementById("unactiveComment").style.display =
+                    "flex";
             }
         </script>
     </body>

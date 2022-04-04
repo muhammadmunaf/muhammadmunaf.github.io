@@ -650,7 +650,7 @@ footer .socials a img:hover {
     margin: 40px 0;
 }
 #newsArticle img {
-    height: 20vh;
+    height: 34em;
     margin-top: 40px;
     margin-bottom: 24px;
     object-fit: cover;
@@ -681,6 +681,9 @@ footer .socials a img:hover {
     opacity: 0.8;
 }
 
+#comments h4.commentTitle {
+    margin-bottom: 24px;
+}
 #comments .addComment form.unactiveComment input {
     padding: 16px 24px;
     border-radius: 10px;
@@ -698,6 +701,15 @@ footer .socials a img:hover {
     width: 30vw;
     display: flex;
     flex-direction: column;
+    display: none;
+}
+@media screen and (max-width: 560px) {
+    #comments .addComment form.activeComment {
+        width: 80vw;
+    }
+    #comments .addComment form.unactiveComment input {
+        width: 80vw;
+    }
 }
 #comments .addComment form.activeComment .userCommentProfile {
     display: flex;
@@ -734,7 +746,7 @@ footer .socials a img:hover {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    margin-left: auto;
+    /* margin-left: auto; */
     border: 1px solid var(--red);
     transition: 0.4s ease;
     cursor: pointer;
@@ -742,6 +754,22 @@ footer .socials a img:hover {
 #comments .addComment form.activeComment button.respond:hover {
     border: 1px solid white;
     background-color: #292929;
+}
+#comments .addComment form.activeComment button.cancelBtn {
+    padding: 8px 40px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid white;
+    transition: 0.4s ease;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 16px;
 }
 #comments .previousComments .oldComment {
     margin: 32px 0;
@@ -784,10 +812,14 @@ footer .socials a img:hover {
     padding: 8px 40px;
     cursor: pointer;
     transition: 0.4s ease;
+    margin-bottom: 16px;
 }
 #comments .previousComments .oldComment button.commentReplyBtn:hover {
     background-color: white;
     color: var(--black);
+}
+#comments .previousComments .commentReply {
+    margin-left: 62px;
 }
 
 @media screen and (max-width: 560px) {
