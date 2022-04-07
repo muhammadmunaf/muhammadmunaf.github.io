@@ -29,13 +29,15 @@
         </section>
 
         <header>
-            <a href=""><img src="images/logo.png" alt="" id="headerLogo" /></a>
+            <a href=""
+                ><img src="images/logo_white.svg" alt="" id="headerLogo"
+            /></a>
 
             <nav>
                 <a href="#">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
-                <a href="">Pricing</a>
+                <!-- <a href="">Pricing</a> -->
             </nav>
 
             <!-- <div id="login-try">
@@ -62,6 +64,7 @@
                 <h3>VIEW ANY STOCK/OPTION DATA SET- ALL ON ONE INTERFACE</h3>
 
                 <form
+                    id="my-form"
                     method="POST"
                     action="https://api.sheetmonkey.io/form/5Woko6c7FEkV1spQ9ZwH6B"
                 >
@@ -78,7 +81,7 @@
                         name="Email"
                         required
                     />
-                    <button id="email-submit-btn">
+                    <button id="email-submit-btn" type="submit">
                         Apply for Early Access!
                     </button>
                 </form>
@@ -168,6 +171,21 @@
                     document.getElementById("loginPopUp").style.display =
                         "flex";
                 });
+
+            window.addEventListener("load", function () {
+                const form = document.getElementById("my-form");
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    const data = new FormData(form);
+                    const action = e.target.action;
+                    fetch(action, {
+                        method: "POST",
+                        body: data,
+                    }).then(() => {
+                        alert("Success!");
+                    });
+                });
+            });
         </script>
     </body>
 </html>

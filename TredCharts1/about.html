@@ -1,100 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TredCharts</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TredCharts</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-</head>
-<body class="otherPages">
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="otherPages">
+        <section id="topStrip" style="display: none">
+            <span
+                >Our Pricing Plan Was Just Updated!
+                <a href="">Check Now!</a></span
+            >
+            <span>Any Questions? Email Us Now info@tredcharts.com</span>
+            <span>Join Us on <a href="">Telegram!</a></span>
+        </section>
 
-    <section id="topStrip" style="display: none;">
-        <span>Our Pricing Plan Was Just Updated! <a href="">Check Now!</a></span>
-        <span>Any Questions? Email Us Now info@tredcharts.com</span>
-        <span>Join Us on <a href="">Telegram!</a></span>
-    </section>
+        <header>
+            <a href=""
+                ><img src="images/logo_white.svg" alt="" id="headerLogo"
+            /></a>
 
-    <header class="otherPages">
-        <a href=""><img src="images/logo_black.png" alt="" id="headerLogo"></a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <!-- <a href="">Pricing</a> -->
+            </nav>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="">Pricing</a>
-        </nav>
-
-        <div id="login-try">
-            <div class="tryNow">
-                <a href="">Try for Free</a>
-            </div>
-
-            <div class="login">
-                <a href="">Login</a>
-            </div>
+            <!-- <div id="login-try">
+        <div class="tryNow" id="SignUpBtn" onclick="RegistrationPopUp()">
+            <a href="">Try for Free</a>
         </div>
-    </header>
 
-    <section id="aboutUs">
-        <h2>About TredCharts</h2>
-        <div id="aboutUsInfo">
-            <div class="mission">
-                <h3 style="color: #1563FF;">Our Mission</h3>
-                <p>Since the concept phase of our site, we’ve remained determined and focused on the goal of providing exceptional and readable financial data for traders and investors within all financial markets, that way more individuals who use our product can credit themselves with a positive and successful experience.
-                </p>
-            </div>
-            <img src="images/seperator_aboutus.png" class=" seperatorAboutUs">
-            <div class="idea">
-                <h3 style="color: #15B7FF;">The Idea</h3>
-                <p>The inception of tred-charts.com was brought up upon an idea to create an observation tool for recording and viewing live and past dated movements of the options chain within a stock. No financial data imposed on any site or program, contains a well constructed feature and or product that gives the user direct quote data of a specifically searched option strike. Under this ability, option traders can see how the premium of a call or put strike has moved throughout the intraday, week, month, and year to date-giving traders an advantage of being able to make quicker and successful option trades(sometimes referred to as scalping) within any desired time frame.</p>
-            </div>
-            <img src="images/seperator_aboutus.png" class=" seperatorAboutUs">
-            <div class="team">
-                <h3 style="color: #00394B;">Our Team</h3>
-                <p>The idea of the product within Tredcharts was drafted and founded by Angelo Anton. The name, logo, and the design of the website, TredCharts.com, was constructed by co-founder/owner Max Heltzel. Together, they managed to assemble a smart team of innovators whom put together TREDCHARTS- as we know it today.</p>
-            </div>
+        <div class="login" id="SignInBtn" onclick="document.getElementById('loginPopUp').style.display = 'flex';">
+            <a href="">Login</a>
         </div>
-    </section>
+    </div> -->
+        </header>
 
-    <footer>
-        <div id="upperFooter">
-            <div id="sectionOne"  style="margin-right: auto;">
-                <a href=""><img src="images/logo.png" id="logoFooter"></a>
-                <p>The most beautiful exclusive properties and luxury apartments</p>
-                <div class="socials">
-                    <a href=""><img src="images/socials/facebook.svg" alt=""></a>
-                    <a href=""><img src="images/socials/twitter.svg" alt=""></a>
-                    <a href=""><img src="images/socials/instagram.svg" alt=""></a>
-                    <a href=""><img src="images/socials/telegram.svg" alt=""></a>
+        <section id="aboutUs">
+            <h2>About TredCharts</h2>
+            <div id="aboutUsInfo">
+                <div class="mission">
+                    <h3 style="color: #1563ff">Our Mission</h3>
+                    <p>
+                        We’re determined and focused on the goal of providing
+                        exceptional and readable financial data for traders and
+                        investors within all financial markets.
+                    </p>
+                </div>
+                <img
+                    src="images/seperator_aboutus.png"
+                    class="seperatorAboutUs"
+                />
+                <div class="idea">
+                    <h3 style="color: #15b7ff">The Idea</h3>
+                    <p>
+                        Our product gives the user direct quote data of a
+                        specifically searched option strike. Under this ability,
+                        option traders can see how the premium of a call or put
+                        strike has moved throughout the intraday, week, month,
+                        and year to date-giving traders an advantage of being
+                        able to make quicker and successful options trades.
+                    </p>
+                </div>
+                <img
+                    src="images/seperator_aboutus.png"
+                    class="seperatorAboutUs"
+                />
+                <div class="team">
+                    <h3 style="color: #00394b">Our Team</h3>
+                    <p>
+                        Our team at TrendCharts is composed of innovative
+                        leaders who all share the passion to create and provide
+                        top line performing market data and analysis tools for
+                        traders and investors.
+                    </p>
                 </div>
             </div>
-            <div id="sectionTwo">
-                <h3>Useful Links</h3>
-                <a href="">About</a>
-                <a href="">Jobs</a>
-                <a href="">Contact</a>
+        </section>
+
+        <footer>
+            <div id="upperFooter">
+                <div id="sectionOne" style="margin-right: auto">
+                    <a href=""
+                        ><img src="images/logo_white.svg" id="logoFooter"
+                    /></a>
+                    <p>
+                        The most beautiful exclusive properties and luxury
+                        apartments
+                    </p>
+                    <div class="socials">
+                        <a href=""
+                            ><img src="images/socials/facebook.svg" alt=""
+                        /></a>
+                        <a href=""
+                            ><img src="images/socials/twitter.svg" alt=""
+                        /></a>
+                        <a href=""
+                            ><img src="images/socials/instagram.svg" alt=""
+                        /></a>
+                        <a href=""
+                            ><img src="images/socials/telegram.svg" alt=""
+                        /></a>
+                    </div>
+                </div>
+                <div id="sectionTwo">
+                    <h3>Useful Links</h3>
+                    <a href="">About</a>
+                    <!-- <a href="">Jobs</a> -->
+                    <a href="">Contact</a>
+                </div>
+                <div id="sectionThree">
+                    <h3>Help?</h3>
+                    <a href="">FAQ</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div id="sectionFour">
+                    <h3>Address</h3>
+                    <p>113-115 Old Brompton Road</p>
+                    <p>SW7 3LE LONDON, UNITED KINGDOM</p>
+                </div>
             </div>
-            <div id="sectionThree">
-                <h3>Help?</h3>
-                <a href="">FAQ</a>
-                <a href="">Terms & COnditions</a>
-                <a href="">Privacy Policy</a>
+            <div id="lowerFooter">
+                <p>© Copyright 2022, tredchars.com</p>
+                <span style="margin-left: auto"
+                    ><a href="">Terms & Conditions</a> |
+                    <a href="">Privacy Policy</a></span
+                >
             </div>
-            <div id="sectionFour">
-                <h3>Address</h3>
-                <p>113-115 Old Brompton Road</p>
-                <p>SW7 3LE LONDON, UNITED KINGDOM</p>
-                <p>website :www.mordern.com</p>
-            </div>
-        </div>
-        <div id="lowerFooter">
-            <p>© Copyright 2021, morden.com</p>
-            <span style="margin-left: auto;"><a href="">Terms & Conditions</a> | <a href="">Privacy Policy</a></span>
-        </div>
-    </footer>
-    
-</body>
+        </footer>
+    </body>
 </html>
