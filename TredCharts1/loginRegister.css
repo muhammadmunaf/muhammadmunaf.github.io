@@ -1,0 +1,296 @@
+:root {
+    --primaryBlue : #1890FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* login css */
+
+#loginPopUp {
+    display: flex;
+    margin: 0 auto;
+    width: 806px;
+    height: 500px;
+    margin-top: 8em;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+}
+#loginPopUp .popUpOptions {
+    display: flex;
+    flex-direction: column;
+}
+#loginPopUp .popUpOptions a.activeOption {
+    border-color: var(--primaryBlue);
+    color: var(--primaryBlue);
+}
+#loginPopUp .popUpOptions a {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 24px 16px;
+    border-left: 2px solid #D8D8D8;
+    margin-bottom: 10px;
+    color: #D8D8D8;
+}
+#loginPopUp .blockLoginRegister {
+    position: relative;
+}
+#loginPopUp .blockLoginRegister img#loginBlockImg {
+    height: 580px;
+}
+#loginPopUp .blockLoginRegister img#loginBlockLogo {
+    position: absolute;
+    width: 140px;
+    top: 280px;
+    left: 22px;
+
+}
+
+#loginPopUp .loginPart {
+    padding: 0 8em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#loginPopUp .loginPart .googleBlock {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 0;
+    border-radius: 4px;
+    margin: 0.6em 0;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+#loginPopUp .loginPart .googleBlock:hover {
+    transition: 0.4s ease;
+    transform: scale(0.99);
+}
+#loginPopUp .loginPart .googleBlock img {
+    padding-left: 10px;
+}
+#loginPopUp .loginPart .googleBlock p {
+    text-align: center;
+    width: 100%;
+    margin-right: 29px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+#loginPopUp .loginPart .orDivider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+#loginPopUp .loginPart .orDivider .line {
+    height: 1px;
+    width: 43%;
+    background-color: #E0E0E0;
+}
+#loginPopUp .loginPart .orDivider p {
+    margin: 0 auto;
+    color: #E0E0E0;
+    font-size: 14px;
+}
+#loginPopUp .loginPart #loginForm {
+    width: 100%;
+}
+#loginPopUp .loginPart #loginForm p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0.4em 0;
+}
+#loginPopUp .loginPart #loginForm input {
+    border-radius: 4px;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.02);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 14px;
+    background-color: #EFEFEF;
+}
+#loginPopUp .loginPart #loginForm input:focus {
+    outline: none;
+}
+#loginPopUp .loginPart #loginForm input[type=submit] {
+    box-shadow: none;
+    background-color: var(--primaryBlue);
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    cursor: pointer;
+    border: 1px solid var(--primaryBlue);
+}
+#loginPopUp .loginPart #loginForm input[type=submit]:hover {
+    transition: 0.4s ease;
+    background-color: white;
+    color: var(--primaryBlue);
+}
+#loginPopUp .loginPart #loginForm a {
+    display: flex;
+    font-size: 14px;
+    color: var(--primaryBlue);
+    justify-content: center;
+    font-weight: bold;
+}
+#loginPopUp .loginPart #loginForm a:hover {
+    text-decoration: underline;
+}
+
+/* Registration CSS */
+
+#registerPopUp {
+    display: flex;
+    margin: 0 auto;
+    width: 806px;
+    height: 500px;
+    margin-top: 8em;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+}
+#registerPopUp .popUpOptions {
+    display: flex;
+    flex-direction: column;
+}
+#registerPopUp .popUpOptions a.activeOption {
+    border-color: var(--primaryBlue);
+    color: var(--primaryBlue);
+}
+#registerPopUp .popUpOptions a {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 24px 16px;
+    border-left: 2px solid #D8D8D8;
+    margin-bottom: 10px;
+    color: #D8D8D8;
+}
+#registerPopUp .blockLoginRegister {
+    position: relative;
+}
+#registerPopUp .blockLoginRegister img#loginBlockImg {
+    height: 580px;
+}
+#registerPopUp .blockLoginRegister img#loginBlockLogo {
+    position: absolute;
+    width: 140px;
+    top: 280px;
+    left: 22px;
+
+}
+
+#registerPopUp .registerPart {
+    padding: 0 8em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#registerPopUp .registerPart .googleBlock {
+    display: flex;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 0;
+    border-radius: 4px;
+    margin: 0.6em 0;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+#registerPopUp .registerPart .googleBlock:hover {
+    transition: 0.4s ease;
+    transform: scale(0.99);
+}
+#registerPopUp .registerPart .googleBlock img {
+    padding-left: 10px;
+}
+#registerPopUp .registerPart .googleBlock p {
+    text-align: center;
+    width: 100%;
+    margin-right: 29px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+#registerPopUp .registerPart .orDivider {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+}
+#registerPopUp .registerPart .orDivider .line {
+    height: 1px;
+    width: 43%;
+    background-color: #E0E0E0;
+}
+#registerPopUp .registerPart .orDivider p {
+    margin: 0 auto;
+    color: #E0E0E0;
+    font-size: 14px;
+}
+#registerPopUp .registerPart #registerForm {
+    width: 100%;
+}
+#registerPopUp .registerPart #registerForm p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0.4em 0;
+}
+#registerPopUp .registerPart #registerForm input {
+    border-radius: 4px;
+    box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.02);
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px 14px;
+    background-color: #EFEFEF;
+}
+#registerPopUp .registerPart #registerForm input:focus {
+    outline: none;
+}
+#registerPopUp .registerPart #registerForm input[type=submit] {
+    box-shadow: none;
+    background-color: var(--primaryBlue);
+    padding: 12px 0;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    cursor: pointer;
+    border: 1px solid var(--primaryBlue);
+}
+#registerPopUp .registerPart #registerForm input[type=submit]:hover {
+    transition: 0.4s ease;
+    background-color: white;
+    color: var(--primaryBlue);
+}
+#registerPopUp .registerPart #registerForm a {
+    display: flex;
+    font-size: 14px;
+    color: var(--primaryBlue);
+    justify-content: center;
+    font-weight: bold;
+}
+#registerPopUp .registerPart #registerForm a:hover {
+    text-decoration: underline;
+}

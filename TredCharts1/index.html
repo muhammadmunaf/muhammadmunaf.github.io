@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TredCharts</title>
+
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="landingPage">
+        <style>
+            ::-webkit-scrollbar {
+                display: none;
+            }
+        </style>
+
+        <section id="topStrip" style="display: none">
+            <span
+                >Our Pricing Plan Was Just Updated!
+                <a href="">Check Now!</a></span
+            >
+            <span>Any Questions? Email Us Now info@tredcharts.com</span>
+            <span>Join Us on <a href="">Telegram!</a></span>
+        </section>
+
+        <header>
+            <a href=""><img src="images/logo.png" alt="" id="headerLogo" /></a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="">Pricing</a>
+            </nav>
+
+            <!-- <div id="login-try">
+            <div class="tryNow" id="SignUpBtn" onclick="RegistrationPopUp()">
+                <a href="">Try for Free</a>
+            </div>
+
+            <div class="login" id="SignInBtn" onclick="document.getElementById('loginPopUp').style.display = 'flex';">
+                <a href="">Login</a>
+            </div>
+        </div> -->
+        </header>
+
+        <section id="landingPageContent">
+            <div id="landingPageContentContainer">
+                <p style="margin-bottom: 1.5em; font-size: 14px">
+                    - FINANCIAL DATA CHARTS
+                </p>
+
+                <h3>IT'S TIME TO UP YOUR TRADING</h3>
+
+                <h1>future of financial insights</h1>
+
+                <h3>VIEW ANY STOCK/OPTION DATA SET- ALL ON ONE INTERFACE</h3>
+
+                <form
+                    method="POST"
+                    action="https://script.google.com/macros/u/2/s/AKfycbyjVa1MRZ84kbAJ6ZPUGyqegdTfZRwY6QTRjmy1NcidIUriie59D3yGO-e--SYrIBPltg/exec"
+                >
+                    <input
+                        type="name"
+                        placeholder="Enter your name"
+                        id="name-input"
+                        name="Name"
+                    />
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        id="email-input"
+                        name="Email"
+                        required
+                    />
+                    <button id="email-submit-btn">
+                        Apply for Early Access!
+                    </button>
+                </form>
+
+                <!-- <div id="CTAs">
+                <a href="" class="tryNowCTA">Try for Free</a>
+                <a href="" class="contactCTA">Contact Us</a>
+            </div> -->
+            </div>
+            <!-- <img src="images/home_side.png" alt="" id="landingPageSideImg"> -->
+            <div id="sideImgLandingPage">
+                <img
+                    src="images/side_home_bg.png"
+                    id="mainBgBlocks"
+                    style="position: absolute; z-index: -1"
+                />
+                <img src="images/block_list.png" class="landingPageSideList" />
+                <img
+                    src="images/block_graph.png"
+                    class="landingPageSideGraph"
+                />
+            </div>
+        </section>
+
+        <section id="companies">
+            <img src="images/companies/comp1.png" alt="" />
+            <img src="images/companies/comp2.png" alt="" />
+            <img src="images/companies/comp3.png" alt="" />
+            <img src="images/companies/comp4.png" alt="" />
+            <img src="images/companies/comp5.png" alt="" />
+        </section>
+
+        <section id="loginPopUp">
+            <div class="popUpOptions">
+                <a href="" class="activeOption">Sign In</a>
+                <a href="">Register</a>
+            </div>
+
+            <div class="blockLoginRegister">
+                <img src="images/login_block.svg" id="loginBlockImg" />
+                <img src="images/logo.png" id="loginBlockLogo" />
+            </div>
+
+            <div class="loginPart">
+                <h3 style="font-weight: bold">Sign In</h3>
+                <a href="" class="googleBlock">
+                    <img src="images/googleLogo.svg" alt="" />
+                    <p>Sign In with Google</p>
+                </a>
+                <div class="orDivider">
+                    <div class="line" style="margin-right: auto"></div>
+                    <p>or</p>
+                    <div class="line" style="margin-left: auto"></div>
+                </div>
+
+                <form action="" id="loginForm">
+                    <p>Email Address</p>
+                    <input
+                        type="email"
+                        name="email"
+                        id=""
+                        value="example@gmail.com"
+                        onfocus="this.value=''"
+                    />
+
+                    <p>Password</p>
+                    <input
+                        type="password"
+                        name="password"
+                        id=""
+                        value="samplepassword"
+                        onfocus="this.value=''"
+                    />
+
+                    <input type="submit" value="Sign In" />
+
+                    <a href="">Forgot Password?</a>
+                </form>
+            </div>
+        </section>
+
+        <script>
+            document
+                .getElementById("SignInBtn")
+                .addEventListener(onclick, function () {
+                    console.log("here");
+                    document.getElementById("loginPopUp").style.display =
+                        "flex";
+                });
+        </script>
+    </body>
+</html>

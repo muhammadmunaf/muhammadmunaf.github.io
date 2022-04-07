@@ -1,0 +1,83 @@
+section#contactUs {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: 4em 18em;
+    box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.25);
+    margin-bottom: 10em;
+}
+section#contactUs > div {
+    padding: 4em;
+    width: 50%;
+}
+section#contactUs h3 {
+    font-weight: bolder;
+    font-size: 22px;
+    margin-bottom: 1em;
+}
+section#contactUs .letsConnect p {
+    font-size: 14px;
+    margin-bottom: 2em;
+    margin-top: 0.5em;
+}
+section#contactUs .letsConnect .connectOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1.6em 0;
+}
+section#contactUs .letsConnect .connectOption p {
+    margin: 0;
+    font-weight: bold;
+}
+section#contactUs .letsConnect .connectOption img {
+    width: 24px;
+    margin-right: 8px;
+}
+section#contactUs .sendMessage {
+    background-color: #F5F5F5;
+}
+section#contactUs .sendMessage .inputField {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em 0;
+    width: 100%;
+}
+section#contactUs .sendMessage .inputField label {
+    font-size: 14px;
+}
+section#contactUs .sendMessage .inputField input {
+    height: 28px;
+    background-color: white;
+    outline: none;
+    border: 1px solid #E0E0E0;
+    padding: 0 8px;
+}
+input:focus {
+    outline: none;
+}
+section#contactUs .sendMessage .horizontalBlockForm {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+section#contactUs .sendMessage .inputField input#messageBox {
+    height: 5em;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+section#contactUs .sendMessage input[type=submit]
+{
+    background-color: #1890FF;
+    border: none;
+    padding: 8px 18px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1em;
+}
+section#contactUs .sendMessage input[type=submit]:hover {
+    transform: scale(0.98);
+    transition: 0.4s ease;
+}

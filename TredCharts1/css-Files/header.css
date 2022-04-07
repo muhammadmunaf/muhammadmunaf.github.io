@@ -1,0 +1,118 @@
+:root {
+    --primaryBlue : #1890FF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+}
+
+/* this one is for the background of landing page*/
+body.landingPage {
+    width: 100vw;
+    background: url(images/bg.png) no-repeat left fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-origin: border-box;
+    /* background-position: left; */
+    height: 100vh;
+    position: fixed;  
+    display: flex;  
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin: 2em 6%;
+    align-items: center;
+    margin-bottom: 3em;
+}
+header img#headerLogo {
+    height: 20px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+header nav a {
+    padding: 2px 6px;
+    margin: 0 12px;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+header nav a:hover {
+    transition: 0.2s ease;
+    border-color: white;
+}
+
+header #login-try {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+header #login-try div {
+    border-radius: 60px;
+    border: 1px solid var(--primaryBlue);
+    background-color: var(--primaryBlue);
+    color: white;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+header #login-try div.login {
+    background-color: white;
+    margin-left: 1em;
+}
+header #login-try a {
+    padding: 0 16px;
+    color: black;
+}
+header #login-try div.tryNow a {
+    color: white;
+}
+header #login-try div.tryNow:hover{
+    background-color: white;
+    transition: 0.4s ease;
+}
+header #login-try div.tryNow:hover a {
+    color: var(--primaryBlue);
+}
+header #login-try div.login:hover {
+    transition: 0.4s ease;
+    background-color: var(--primaryBlue);
+}
+header #login-try div.login:hover a {
+    color: white;
+}
+
+/* this one is for the background of other pages*/
+body.otherPages {
+    background: url(images/basic_bg.png) no-repeat left top; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    display: flex;  
+    flex-direction: column;
+}
+/* other than the landing page, they hvae black text, so for that */
+header.otherPages nav a{
+    color: black;
+}
+header.otherPages nav a:hover {
+    transition: 0.2s ease;
+    border-color: black;
+}
