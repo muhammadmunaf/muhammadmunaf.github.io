@@ -18,6 +18,7 @@ a {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
+    color: #f53838;
 }
 .para {
     font-family: "Inter";
@@ -316,7 +317,7 @@ section h3 {
     background-color: #f53838;
     color: white;
     border-radius: 10px;
-    margin-top: 16px;
+    margin-top: 24px;
     font-family: "Inter";
     font-style: normal;
     font-weight: 600;
@@ -558,8 +559,8 @@ footer .midContainer .left .discord {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 16px;
-    width: min-content;
+    padding: 14px;
+    width: 240px;
 }
 footer .midContainer .left .discord p {
     font-family: "Inter";
@@ -573,20 +574,25 @@ footer .midContainer .left .discord a {
     background-color: #f53838;
     border-radius: 10px;
     display: flex;
-    padding: 16px 24px;
+    padding: 8px 16px;
     align-items: center;
     justify-content: center;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
     line-height: 28px;
     color: white;
-    width: min-content;
+    width: 100%;
     margin-top: 16px;
+    transition: 0.4s ease;
+}
+footer .midContainer .left .discord a:hover {
+    background-color: #0f0f0f;
 }
 footer .midContainer .left .discord a img {
     margin: 0;
+    width: 24px;
 }
 
 footer .midContainer .right {
