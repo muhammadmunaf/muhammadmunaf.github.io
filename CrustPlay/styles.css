@@ -301,9 +301,31 @@ section h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-#getAwards p {
+#getAwards span {
     padding-top: 32px;
+    width: 68%;
+}
+/* #getAwards span b {
+    color: #f53838;
+} */
+#getAwards a {
+    padding: 16px 24px;
+    cursor: pointer;
+    background-color: #f53838;
+    color: white;
+    border-radius: 10px;
+    margin-top: 16px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.4s ease;
+}
+#getAwards a:hover {
+    background-color: white;
+    color: #0f0f0f;
 }
 
 #recentTournaments {
@@ -515,20 +537,58 @@ footer hr {
 footer .midContainer {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 footer .midContainer .left img {
     height: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
 }
-footer .midContainer .left p.email {
+footer .midContainer p.email {
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
+    text-align: right;
+    margin-top: 24px;
 }
+footer .midContainer .left .discord {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    width: min-content;
+}
+footer .midContainer .left .discord p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #040404;
+}
+footer .midContainer .left .discord a {
+    background-color: #f53838;
+    border-radius: 10px;
+    display: flex;
+    padding: 16px 24px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    width: min-content;
+    margin-top: 16px;
+}
+footer .midContainer .left .discord a img {
+    margin: 0;
+}
+
 footer .midContainer .right {
     display: flex;
     flex-direction: column;
@@ -640,9 +700,15 @@ footer .socials a img:hover {
         width: 14em;
     }
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1260px) {
     #news .newsCard img {
-        width: 12em;
+        width: 12.5em;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    #news .newsCard img {
+        width: 11em;
     }
 }
 
