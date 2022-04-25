@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
 :root {
     --red: #f53838;
     --black: #040404;
@@ -15,9 +16,10 @@ a {
 }
 .subTitle {
     font-family: "Inter";
+    font-family: "Ubuntu", sans-serif;
     font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 28px;
     color: #f53838;
 }
 .para {
@@ -224,6 +226,16 @@ section#info {
     justify-content: space-around;
     margin: 60px 0;
 }
+
+@media screen and (max-width: 560px) {
+    section#gamesList {
+        display: none;
+    }
+    section#info {
+        padding-top: 60px;
+    }
+}
+
 #info .infoContainer {
     display: flex;
     flex-direction: column;
@@ -290,10 +302,22 @@ section h3 {
         height: 22em;
     }
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1090px) {
     #getStarted .getStartedImgsContainer .getStartedCard {
         width: 15em;
         height: 20em;
+    }
+}
+@media screen and (max-width: 1260px) {
+    #getStarted .getStartedImgsContainer .getStartedCard {
+        width: 16em;
+        height: 21em;
+    }
+}
+@media screen and (max-width: 960px) {
+    #getStarted .getStartedImgsContainer .getStartedCard {
+        width: 14em;
+        height: 19em;
     }
 }
 
@@ -337,6 +361,7 @@ section h3 {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 32px;
+    flex-wrap: wrap;
 }
 #recentTournaments .tournamentsContainer .tournamentCard {
     display: flex;
@@ -366,9 +391,19 @@ section h3 {
         width: 18em;
     }
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1090px) {
     .tournamentCard img {
         width: 15em;
+    }
+}
+@media screen and (max-width: 1260px) {
+    .tournamentCard img {
+        width: 16em;
+    }
+}
+@media screen and (max-width: 960px) {
+    .tournamentCard img {
+        width: 13em;
     }
 }
 
@@ -711,10 +746,14 @@ footer .socials a img:hover {
         width: 12.5em;
     }
 }
-
 @media screen and (max-width: 1090px) {
     #news .newsCard img {
         width: 11em;
+    }
+}
+@media screen and (max-width: 960px) {
+    #news .newsCard img {
+        width: 10em;
     }
 }
 
@@ -1050,7 +1089,7 @@ main.team img.bgImage {
     }
 
     section#faq {
-        margin: 30px 16px;
+        margin: 30px -30px;
     }
     #faq .faqItem .question {
         padding: 8px 16px;
@@ -1061,6 +1100,9 @@ main.team img.bgImage {
     }
     #faq .faqItem .question h4 {
         font-size: 16px;
+    }
+    #faq .faqItem .expanded {
+        padding: 16px 20px;
     }
 
     section#bottomCTA {
@@ -1104,5 +1146,26 @@ main.team img.bgImage {
         display: flex;
         flex-wrap: nowrap;
         width: 100%;
+    }
+    footer .discord {
+        margin-bottom: 24px;
+    }
+    footer .midContainer {
+        align-items: center;
+    }
+    footer .midContainer .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #getStarted .getStartedImgsContainer .getStartedCard {
+        width: 18em;
+        height: 22em;
+    }
+    #news .newsCard img {
+        width: 18em;
+    }
+    #team {
+        gap: 32px;
     }
 }
