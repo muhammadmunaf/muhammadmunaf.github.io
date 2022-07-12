@@ -103,10 +103,10 @@ nav#desktop .leftSideNav .navLinks a.active {
     color: var(--orange);
     border-bottom: 2px solid var(--darkSecondary);
 }
-nav#desktop .leftSideNav a.active:hover {
+nav#desktop .leftSideNav .navLinks a.active:hover {
     border-bottom: 2px solid var(--orange);
 }
-nav#desktop .leftSideNav a:hover {
+nav#desktop .leftSideNav .navLinks a:hover {
     border-bottom: 2px solid var(--whitePrimary);
 }
 nav#desktop .rightSideNav {
@@ -184,6 +184,7 @@ nav#mobile {
 @media screen and (max-width: 480px) {
     nav#mobile {
         display: flex;
+        justify-content: space-between;
     }
     nav#desktop {
         display: none;
