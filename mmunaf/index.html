@@ -9,6 +9,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles.css" />
 
         <title>Home</title>
@@ -83,30 +84,36 @@
             </div>
         </div>
 
-        <section id="hero">
+        <section id="hero" data-aos="fade-up">
             <div class="heroContent">
                 <p class="smallCaps" style="color: #ffffff">Hi, i am munaf</p>
                 <p class="mainHeadingText">
-                    Aliquam sit amet augue vel neque tincidunt lobortis a id
-                    purus.
+                    I build digital experiences that rock.
                 </p>
-                <div class="heroBtns">
-                    <a id="downloadProjectBtn" href="">Download Projects</a>
+                <div
+                    class="heroBtns"
+                    data-aos="fade-up"
+                    data-aos-offset="200"
+                    data-aos-delay="100"
+                    data-aos-duration="800"
+                >
+                    <a id="downloadProjectBtn" href="">Get in Contact</a>
                     <a id="getInContactBtn" href="#contact"
-                        >Get in Contact
-                        <img
+                        >Check Portfolio
+                        <!-- <img
                             src="Icons/arrow-right.svg"
                             alt="right arrow"
                             style="margin-left: 6px"
-                    /></a>
+                    /> --></a
+                    >
                 </div>
             </div>
             <img src="Images/hero_img.png" alt="" class="heroPic" />
         </section>
 
         <section id="myGoal">
-            <img src="Images/my_goal_img.png" alt="" />
-            <div class="myGoalContent">
+            <img src="Images/my_goal_img.png" alt="" data-aos="fade-right" />
+            <div class="myGoalContent" data-aos="fade-left">
                 <p class="smallCaps">My goal</p>
                 <p class="bodyText">
                     I create websites, webapps and mobile apps that helps users
@@ -123,16 +130,23 @@
         </div>
 
         <section id="myProjects">
-            <div class="myProjectsContent">
+            <div class="myProjectsContent" data-aos="fade-up">
                 <p class="smallCaps">My projects</p>
                 <p class="bodyText">
                     Wide range from websites, webapps to mobile apps, each of
                     them unique and successful in their own way.
                 </p>
             </div>
-            <div class="projects">
+            <div
+                class="projects"
+                data-aos="fade-up"
+                data-aos-offset="200"
+                data-aos-delay="200"
+                data-aos-duration="800"
+            >
                 <div
                     class="projectTemplateBig proj1"
+                    data-aos="fade-up"
                     onclick="window.open(
                         'https://www.behance.net/gallery/135357335/CookEasy-UX-Case-Study',
                         '_blank' // <- This is what makes it open in a new window.
@@ -149,6 +163,8 @@
                 </div>
                 <div
                     class="projectTemplateSmall proj2"
+                    data-aos="fade-up"
+                    data-aos-delay="500"
                     onclick="window.open(
                     'https://muhammadmunaf.github.io/Dashnect/',
                     '_blank' // <- This is what makes it open in a new window.
@@ -165,6 +181,7 @@
 
                 <div
                     class="projectTemplateSmall proj3"
+                    data-aos="fade-up"
                     onclick="window.open(
                     'https://www.behance.net/gallery/127384807/BellyFull-Food-Delivery-App-Design-Concept',
                     '_blank' // <- This is what makes it open in a new window.
@@ -180,6 +197,7 @@
                 </div>
                 <div
                     class="projectTemplateBig proj4"
+                    data-aos="fade-up"
                     onclick="window.open(
                     'https://www.behance.net/gallery/128820167/Python-Developer-Website-Design',
                     '_blank' // <- This is what makes it open in a new window.
@@ -195,41 +213,59 @@
                     </div>
                 </div>
             </div>
-            <a class="seeAllProjectsBtn" href="projects.html"
+            <a
+                class="seeAllProjectsBtn"
+                href="projects.html"
+                data-aos="fade-up"
+                data-aos-duration="100"
+                data-aos-offset="100"
                 >See all projects <img src="Icons/arrow-right.svg" alt=""
             /></a>
         </section>
 
         <section id="services">
-            <p class="smallCaps">Services</p>
-            <p class="bodyText">
-                I create digital solutions to solve real life problems
+            <p class="smallCaps" data-aos="fade-right">Services</p>
+            <p class="bodyText" data-aos="fade-right">
+                Ambition and dedication for the attention to detail.
             </p>
 
-            <div class="servicesContainer">
-                <div class="servicesBox service1">
-                    <img src="Images/ui_service.png" alt="" />
-                    <div class="serviceBoxContent">
-                        <p class="serviceBoxTitle">UI/UX</p>
-                        <p class="serviceBoxPara">
-                            Morbi accumsan tristique lacus, at posuere nisi
-                            laoreet nec. Maecenas fringilla arcu sit amet
-                            ultrices semper.
-                        </p>
-                    </div>
+            <div class="servicesContainer" data-aos="fade-up">
+                <div class="servicesB">
+                    <h3 class="bodyText">Strategy</h3>
+                    <p>
+                        In our strategy process, we analyze customer needs,
+                        identify general product problems and advise on
+                        important future decisions.
+                    </p>
                 </div>
-
-                <div class="servicesBox">
-                    <img src="Images/dev_service.png" alt="" />
-                    <div class="serviceBoxContent">
-                        <p class="serviceBoxTitle">Web-Dev</p>
-                        <p class="serviceBoxPara">
-                            Morbi accumsan tristique lacus, at posuere nisi
-                            laoreet nec. Maecenas fringilla arcu sit amet
-                            ultrices semper.
-                        </p>
-                    </div>
+                <div class="servicesB">
+                    <h3 class="bodyText">Design</h3>
+                    <p>
+                        In our strategy process, we analyze customer needs,
+                        identify general product problems and advise on
+                        important future decisions.
+                    </p>
                 </div>
+                <div class="servicesB">
+                    <h3 class="bodyText">Development</h3>
+                    <p>
+                        In our strategy process, we analyze customer needs,
+                        identify general product problems and advise on
+                        important future decisions.
+                    </p>
+                </div>
+            </div>
+            <div
+                style="
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    margin-top: 48px;
+                "
+                data-aos="fade-up"
+                data-aos-delay="160"
+            >
+                <a id="exploreServicesBtn" href="">Explore Services</a>
             </div>
         </section>
 
@@ -238,8 +274,8 @@
         </div>
 
         <section id="about">
-            <img src="Images/Blank.jpg" alt="" />
-            <div class="aboutContent">
+            <img src="Images/Blank.jpg" alt="" data-aos="fade-right" />
+            <div class="aboutContent" data-aos="fade-left">
                 <p class="smallCaps">About</p>
                 <p class="bodyText">
                     Quisque dictum tortor viverra metus ultrices, nec tristique
@@ -255,9 +291,13 @@
         </div>
 
         <section id="contact">
-            <p class="contactTitle">Let's work together!</p>
+            <p class="contactTitle" data-aos="fade-up">Let's work together!</p>
             <div class="contactOuterContainer">
-                <div class="contactInfo">
+                <div
+                    class="contactInfo"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
                     <p class="smallCaps">Connect</p>
                     <p class="contactInfoContent">info@gmail.com</p>
                     <p class="contactInfoContent">+92 315 7600100</p>
@@ -266,7 +306,11 @@
                         <p class="contactInfoContent">Whatsapp QR</p>
                     </div> -->
                 </div>
-                <div class="contactForm">
+                <div
+                    class="contactForm"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
                     <form
                         action="https://formspree.io/f/xlezjwrj"
                         method="POST"
@@ -296,7 +340,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer data-aos="fade-up" data-aos-offset="50">
             <div class="horizontalLine" style="background-color: #333b3d">
                 <hr style="color: #ffffff" />
             </div>
@@ -325,8 +369,10 @@
                 </div>
             </div>
         </footer>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
 
-        <script>
+        <!-- <script>
             function navMenuControl() {
                 if (
                     document.getElementById("mobileNavOptions").style.display ==
@@ -345,6 +391,6 @@
                         .setAttribute("src", "Icons/menu.svg");
                 }
             }
-        </script>
+        </script> -->
     </body>
 </html>

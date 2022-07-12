@@ -9,6 +9,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles.css" />
 
         <title>Projects</title>
@@ -83,27 +84,33 @@
             </div>
         </div>
 
-        <section id="servicesHeading">
+        <section id="servicesHeading" data-aos="fade-up">
             <p class="smallCaps" style="color: #ffffff">projects</p>
             <p class="mainHeadingText">
                 Aliquam sit amet augue vel neque tincidunt lobortis a id purus.
             </p>
         </section>
 
-        <section id="projectDetails">
-            <div class="projectCatSelector">
-                <div class="catBtn current">
-                    <p class="catBtnText">UI/UX</p>
+        <section
+            id="projectDetails"
+            data-aos="fade-up"
+            data-aos-offset="200"
+            data-aos-delay="100"
+            data-aos-duration="600"
+        >
+            <div class="projectCatSelector" data-aos="fade-up">
+                <div class="catBtn current" onclick="openTab(event, 'UI/UX')">
+                    <p class="catBtnText">Mobile Apps</p>
                 </div>
-                <div class="catBtn">
-                    <p class="catBtnText">Mobile Design</p>
+                <div class="catBtn" onclick="openTab(event, 'Mobile')">
+                    <p class="catBtnText">Web Apps</p>
                 </div>
-                <div class="catBtn">
-                    <p class="catBtnText">Web Design</p>
+                <div class="catBtn" onclick="openTab(event, 'Web')">
+                    <p class="catBtnText">Websites</p>
                 </div>
-                <div class="catBtn">
+                <!-- <div class="catBtn" onclick="openTab(event, 'Dev')">
                     <p class="catBtnText">Web Development</p>
-                </div>
+                </div> -->
             </div>
 
             <div class="projectCatMobileSelector">
@@ -115,7 +122,7 @@
                 </select>
             </div>
 
-            <div class="projects">
+            <div class="projects tabcontent" id="UI/UX">
                 <div
                     class="projectTemplateBig proj1"
                     onclick="window.open(
@@ -180,9 +187,93 @@
                     </div>
                 </div>
             </div>
+
+            <div class="projects tabcontent" id="Mobile">
+                <div
+                    class="projectTemplateBig proj1"
+                    onclick="window.open(
+                        'https://www.behance.net/gallery/135357335/CookEasy-UX-Case-Study',
+                        '_blank' // <- This is what makes it open in a new window.
+                      );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">CookEasy</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Branding</p>
+                            <p>Mobile app</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="projectTemplateSmall proj3"
+                    onclick="window.open(
+                    'https://www.behance.net/gallery/127384807/BellyFull-Food-Delivery-App-Design-Concept',
+                    '_blank' // <- This is what makes it open in a new window.
+                  );"
+                >
+                    <div class="projectTemplateContent">
+                        <p class="projectTemplateTitle">BellyFull</p>
+                        <div class="projectTemplateTags">
+                            <p>UI/UX</p>
+                            <p>Branding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <footer>
+        <section id="contact">
+            <p class="contactTitle" data-aos="fade-up">Let's work together!</p>
+            <div class="contactOuterContainer">
+                <div
+                    class="contactInfo"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
+                    <p class="smallCaps">Connect</p>
+                    <p class="contactInfoContent">info@gmail.com</p>
+                    <p class="contactInfoContent">+92 315 7600100</p>
+                    <!-- <div class="whatsappContact">
+                        <img src="Images/Blank.jpg" alt="QR code" />
+                        <p class="contactInfoContent">Whatsapp QR</p>
+                    </div> -->
+                </div>
+                <div
+                    class="contactForm"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
+                    <form
+                        action="https://formspree.io/f/xlezjwrj"
+                        method="POST"
+                    >
+                        <div class="row">
+                            <input
+                                type="text"
+                                placeholder="Name"
+                                style="margin-right: 20px"
+                                name="name"
+                            />
+                            <input
+                                type="email"
+                                placeholder="Email"
+                                name="_replyto"
+                            />
+                        </div>
+                        <textarea
+                            name="message"
+                            placeholder="Project Details"
+                            cols="10"
+                            rows="10"
+                        ></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer data-aos="fade-up" data-aos-offset="50">
             <div class="horizontalLine" style="background-color: #333b3d">
                 <hr style="color: #ffffff" />
             </div>
@@ -212,7 +303,10 @@
             </div>
         </footer>
 
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
         <script>
+            document.getElementById("Mobile").style.display = "none";
             function navMenuControl() {
                 if (
                     document.getElementById("mobileNavOptions").style.display ==
@@ -230,6 +324,32 @@
                         .getElementById("navExpandBtn")
                         .setAttribute("src", "Icons/menu.svg");
                 }
+            }
+
+            function openTab(evt, tabName) {
+                // Declare all variables
+                var i, tabcontent, tablinks;
+
+                // Get all elements with class="tabcontent" and hide them
+                tabcontent = document.getElementsByClassName(
+                    "projects tabcontent"
+                );
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                // Get all elements with class="tablinks" and remove the class "active"
+                tablinks = document.getElementsByClassName("catBtn");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(
+                        " current",
+                        ""
+                    );
+                }
+
+                // Show the current tab, and add an "active" class to the button that opened the tab
+                document.getElementById(tabName).style.display = "flex";
+                evt.currentTarget.className += " current";
             }
         </script>
     </body>

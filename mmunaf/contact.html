@@ -9,6 +9,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles.css" />
         <link rel="icon" href="Images/favicon.png" />
 
@@ -85,9 +86,13 @@
         </div>
 
         <section id="contact">
-            <p class="contactTitle">Let's work together!</p>
+            <p class="contactTitle" data-aos="fade-up">Let's work together!</p>
             <div class="contactOuterContainer">
-                <div class="contactInfo">
+                <div
+                    class="contactInfo"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
                     <p class="smallCaps">Connect</p>
                     <p class="contactInfoContent">info@gmail.com</p>
                     <p class="contactInfoContent">+92 315 7600100</p>
@@ -96,7 +101,11 @@
                         <p class="contactInfoContent">Whatsapp QR</p>
                     </div> -->
                 </div>
-                <div class="contactForm">
+                <div
+                    class="contactForm"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
                     <form
                         action="https://formspree.io/f/xlezjwrj"
                         method="POST"
@@ -126,7 +135,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer data-aos="fade-up" data-aos-offset="50">
             <div class="horizontalLine" style="background-color: #333b3d">
                 <hr style="color: #ffffff" />
             </div>
@@ -156,25 +165,7 @@
             </div>
         </footer>
 
-        <script>
-            function navMenuControl() {
-                if (
-                    document.getElementById("mobileNavOptions").style.display ==
-                    "none"
-                ) {
-                    document.getElementById("mobileNavOptions").style.display =
-                        "flex";
-                    document
-                        .getElementById("navExpandBtn")
-                        .setAttribute("src", "Icons/cross.svg");
-                } else {
-                    document.getElementById("mobileNavOptions").style.display =
-                        "none";
-                    document
-                        .getElementById("navExpandBtn")
-                        .setAttribute("src", "Icons/menu.svg");
-                }
-            }
-        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

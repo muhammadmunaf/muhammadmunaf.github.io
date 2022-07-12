@@ -5,7 +5,8 @@
     --whiteSecondary: #e3e3e3;
     --whitePrimary: #ffffff;
     --basicShadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
-    --basicRadius: 40px;
+    --basicRadius: 24px;
+    --roundRadius: 40px;
 }
 html {
     scroll-behavior: smooth;
@@ -47,6 +48,14 @@ html {
     font-weight: 300;
     margin-top: 14px;
     margin-bottom: 20px;
+}
+
+hr {
+    height: 1px;
+    background-color: #333b3d;
+    border: none;
+    outline: none;
+    opacity: 0.4;
 }
 
 section {
@@ -186,6 +195,7 @@ section#hero {
     align-items: center;
     padding-bottom: 100px;
     height: calc(100vh - 80px);
+    justify-content: space-between;
 }
 #hero .heroContent {
     margin-top: 180px;
@@ -208,6 +218,8 @@ section#hero {
     border: 1px solid var(--orange);
     transition: 0.4s ease;
     cursor: pointer;
+    border-radius: var(--roundRadius);
+    text-align: center;
 }
 #getInContactBtn {
     display: flex;
@@ -216,14 +228,14 @@ section#hero {
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 80px;
+    margin-left: 56px;
     transition: 0.4s ease;
     cursor: pointer;
     border-bottom: 2px solid var(--darkSecondary);
-    /* transition: 0.4s ease; */
+    transition: 0.4s ease;
     animation: leftToRight 0.4s ease none;
     cursor: pointer;
-    padding-bottom: 4px;
+    /* padding-bottom: 4px; */
 }
 #hero .heroPic {
     margin-left: 4em;
@@ -276,14 +288,16 @@ section#projectDetails .projects {
 .projectTemplateBig {
     width: 540px;
     /* height: 740px; */
-    height: 1060px;
+    /* height: 1060px; */
+    height: 700px;
     background-color: #efefef;
     border-radius: var(--basicRadius);
     margin-bottom: 40px;
 }
 .projectTemplateSmall {
     width: 540px;
-    height: 500px;
+    /* height: 500px; */
+    height: 520px;
     background-color: #efefef;
     border-radius: var(--basicRadius);
     margin-bottom: 40px;
@@ -302,9 +316,10 @@ section#projectDetails .projects {
 .projectTemplateContent .projectTemplateTags {
     display: flex;
     flex-direction: row;
-    margin-top: 12px;
+    margin-top: 8px;
+    gap: 16px;
 }
-.projectTemplateContent .projectTemplateTags p {
+/* .projectTemplateContent .projectTemplateTags p {
     padding: 4px 16px;
     color: var(--whitePrimary);
     background-color: var(--orange);
@@ -313,13 +328,24 @@ section#projectDetails .projects {
     font-size: 14px;
     margin-right: 10px;
     text-transform: uppercase;
+} */
+
+.projectTemplateContent .projectTemplateTags p {
+    padding: 0px;
+    font-weight: 800;
+    font-size: 14px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    color: var(--darkSecondary);
+    opacity: 0.7;
 }
+
 section#myProjects .seeAllProjectsBtn {
     font-size: 18px;
     font-weight: 600;
     color: var(--darkPrimary);
-    margin-left: auto;
-    margin-right: 0;
+    /* margin-left: auto;
+    margin-right: 0; */
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -366,7 +392,7 @@ section#myProjects .seeAllProjectsBtn:hover {
 }
 .proj4 {
     margin-left: 20px;
-    margin-top: -561px;
+    margin-top: -180px;
     background-image: url("Images/proj4.png");
     background-size: cover;
 }
@@ -385,8 +411,9 @@ section#services .servicesContainer {
     justify-content: space-between;
     margin-top: 60px;
     flex-wrap: wrap;
+    gap: 40px;
 }
-#services .servicesBox {
+/* #services .servicesBox {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -395,7 +422,9 @@ section#services .servicesContainer {
     padding: 30px 34px;
     border-radius: var(--basicRadius);
     width: 540px;
+    width: 560px;
     transition: 0.4s ease;
+    cursor: pointer;
 }
 #services .servicesBox .serviceBoxContent {
     display: flex;
@@ -412,9 +441,6 @@ section#services .servicesContainer {
     font-weight: 300;
     color: var(--darkPrimary);
 }
-.service1 {
-    margin-right: 40px;
-}
 #services .servicesBox:hover {
     background-color: var(--orange);
 }
@@ -424,6 +450,40 @@ section#services .servicesContainer {
 }
 #services .servicesBox:hover .serviceBoxPara {
     color: var(--whitePrimary);
+} */
+#services .servicesB {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+    justify-content: left;
+    width: 20rem;
+}
+#services .servicesB p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+}
+#services #exploreServicesBtn {
+    padding: 12px 24px;
+    background-color: var(--darkSecondary);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: var(--basicRadius);
+    color: var(--whitePrimary);
+    text-decoration: none;
+    border: 1px solid var(--orange);
+    transition: 0.4s ease;
+    cursor: pointer;
+    border-radius: var(--roundRadius);
+    width: 200px;
+    text-align: center;
+}
+
+#services #exploreServicesBtn:hover {
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
 }
 
 section#about {
@@ -492,6 +552,7 @@ section#contact {
     margin-top: 50px;
     transition: 0.4s ease;
     cursor: pointer;
+    border-radius: var(--roundRadius);
 }
 #contact .contactOuterContainer .contactForm form button:hover {
     border: 1px solid var(--orange);
@@ -783,7 +844,8 @@ section#projectDetails .catBtnText {
     margin: 0 auto;
 }
 section#projectDetails .catBtn {
-    width: 16vw;
+    /* width: 16vw; */
+    width: 20vw;
     border-bottom: 2px solid var(--whiteSecondary);
     padding-bottom: 24px;
     display: flex;
@@ -901,3 +963,40 @@ section#projectDetails .projectCatMobileSelector select {
         display: flex;
     }
 }
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+/* .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+ */
