@@ -9,6 +9,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="styles.css" />
 
         <title>Services</title>
@@ -83,14 +84,77 @@
             </div>
         </div>
 
-        <section id="servicesHeading">
-            <p class="smallCaps" style="color: #ffffff">services</p>
+        <section id="servicesHeading" data-aos="fade-up">
+            <p class="smallCaps" style="color: #ffffff">Services</p>
             <p class="mainHeadingText">
                 Aliquam sit amet augue vel neque tincidunt lobortis a id purus.
             </p>
         </section>
 
-        <section id="servicesDetails">
+        <section id="servicesDetails" data-aos="fade-up">
+            <div class="servicesBoxDetail">
+                <img
+                    src="Images/strategy.png"
+                    alt=""
+                    style="height: 540px"
+                    data-aos="fade-up"
+                />
+                <div class="container" data-aos="fade-up">
+                    <p class="servicesHeadingText">Strategy</p>
+                    <p class="serviceContentText">
+                        Morbi sed mi nec ipsum mollis tempus. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. In hac habitasse
+                        platea dictumst.
+                    </p>
+                    <p class="serviceDetailsList">
+                        - Research<br />- UI/UX Design<br />- Prototyping<br />-
+                        Information Architecture
+                    </p>
+                </div>
+            </div>
+            <div class="servicesBoxDetail">
+                <img
+                    src="Images/design1.png"
+                    alt=""
+                    style="order: 2; height: 540px"
+                    data-aos="fade-up"
+                />
+                <div class="container" data-aos="fade-up">
+                    <p class="servicesHeadingText">Design</p>
+                    <p class="serviceContentText">
+                        Morbi sed mi nec ipsum mollis tempus. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. In hac habitasse
+                        platea dictumst.
+                    </p>
+                    <p class="serviceDetailsList">
+                        - Research<br />- UI/UX Design<br />- Prototyping<br />-
+                        Information Architecture
+                    </p>
+                </div>
+            </div>
+            <div class="servicesBoxDetail">
+                <img
+                    src="Images/dev1.png"
+                    alt=""
+                    style="height: 540px"
+                    data-aos="fade-up"
+                />
+                <div class="container" data-aos="fade-up">
+                    <p class="servicesHeadingText">Development</p>
+                    <p class="serviceContentText">
+                        Morbi sed mi nec ipsum mollis tempus. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit. In hac habitasse
+                        platea dictumst.
+                    </p>
+                    <p class="serviceDetailsList">
+                        - Research<br />- UI/UX Design<br />- Prototyping<br />-
+                        Information Architecture
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="servicesDetails">
             <div class="servicesBoxDetailed mobileDesign">
                 <div class="servicesBoxDetailedContent">
                     <p class="servicesHeadingText">Mobile Design</p>
@@ -137,12 +201,16 @@
                 </div>
                 <img src="Images/web_devel_service.png" alt="" />
             </div>
-        </section>
+        </section> -->
 
         <section id="contact">
-            <p class="contactTitle">Let's work together!</p>
+            <p class="contactTitle" data-aos="fade-up">Let's work together!</p>
             <div class="contactOuterContainer">
-                <div class="contactInfo">
+                <div
+                    class="contactInfo"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
                     <p class="smallCaps">Connect</p>
                     <p class="contactInfoContent">info@gmail.com</p>
                     <p class="contactInfoContent">+92 315 7600100</p>
@@ -151,7 +219,11 @@
                         <p class="contactInfoContent">Whatsapp QR</p>
                     </div> -->
                 </div>
-                <div class="contactForm">
+                <div
+                    class="contactForm"
+                    data-aos="fade-up"
+                    data-aos-delay="250"
+                >
                     <form
                         action="https://formspree.io/f/xlezjwrj"
                         method="POST"
@@ -181,7 +253,7 @@
             </div>
         </section>
 
-        <footer>
+        <footer data-aos="fade-up" data-aos-offset="50">
             <div class="horizontalLine" style="background-color: #333b3d">
                 <hr style="color: #ffffff" />
             </div>
@@ -211,25 +283,7 @@
             </div>
         </footer>
 
-        <script>
-            function navMenuControl() {
-                if (
-                    document.getElementById("mobileNavOptions").style.display ==
-                    "none"
-                ) {
-                    document.getElementById("mobileNavOptions").style.display =
-                        "flex";
-                    document
-                        .getElementById("navExpandBtn")
-                        .setAttribute("src", "Icons/cross.svg");
-                } else {
-                    document.getElementById("mobileNavOptions").style.display =
-                        "none";
-                    document
-                        .getElementById("navExpandBtn")
-                        .setAttribute("src", "Icons/menu.svg");
-                }
-            }
-        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="script.js"></script>
     </body>
 </html>

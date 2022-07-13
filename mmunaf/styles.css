@@ -390,12 +390,90 @@ section#myProjects .seeAllProjectsBtn:hover {
     margin-right: 20px;
     background-image: url("Images/proj3.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .proj4 {
     margin-left: 20px;
     margin-top: -180px;
     background-image: url("Images/proj4.png");
     background-size: cover;
+}
+
+/* The new project template */
+
+.projectIndex {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+}
+
+.projectIndex .col {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.projectTemplate {
+    width: 36vw;
+    /* border-radius: var(--basicRadius);
+    border: 1px solid #e3e3e3;
+    display: flex;
+    flex-direction: column;*/
+
+    padding: 0 24px;
+}
+
+.projectTemplateImg {
+    width: 26vw;
+    align-self: center;
+    justify-self: center;
+    /*     border: 1px solid #e3e3e3;
+    background-color: #e3e3e3; */
+    width: 36vw;
+}
+
+.projectTemplateTitle {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--darkPrimary);
+}
+
+.projectTemplateSubText {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--darkPrimary);
+    padding-top: 8px;
+    padding-bottom: 24px;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+}
+
+.projectTemplateButton {
+    padding: 8px 16px;
+    border-radius: var(--roundRadius);
+    background-color: var(--whiteSecondary);
+    color: var(--darkSecondary);
+    text-decoration: none;
+    font-weight: 400;
+    width: max-content;
+}
+
+@media screen and (max-width: 480px) {
+    .projectTemplate {
+        width: 72vw;
+    }
+    .projectTemplateImg {
+        width: 72vw;
+    }
 }
 
 section#services {
@@ -796,7 +874,7 @@ section#servicesHeading {
 section#servicesDetails {
     display: flex;
     flex-direction: column;
-    padding: 40px 16em;
+    padding: 56px 16em;
     justify-items: center;
     background-color: var(--whitePrimary);
     align-items: center;
@@ -830,6 +908,15 @@ section#servicesDetails
     .serviceContentText {
     width: 100%;
 }
+section#servicesDetails .servicesBoxDetail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin: 80px 0;
+}
+
 section#projectDetails {
     background-color: var(--whitePrimary);
     padding-top: 20px;
@@ -1001,3 +1088,7 @@ section#projectDetails .projectCatMobileSelector select {
     border-top: none;
 }
  */
+
+body::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
