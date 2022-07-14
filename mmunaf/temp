@@ -1,0 +1,56 @@
+<!-- <div class="projectIndex">
+                <div class="col">
+                    <div class="projectTemplate">
+                        <img
+                            src="Images/Projects/aden.png"
+                            class="projectTemplateImg"
+                        />
+                        <p class="projectTemplateTitle">Aden</p>
+                        <p class="projectTemplateSubText">
+                            CookEasy - Is an app that lets users do this this
+                            and this
+                        </p>
+                        <a href="" class="projectTemplateButton">Coming Soon</a>
+                    </div>
+
+                    <div class="projectTemplate">
+                        <img
+                            src="Images/Projects/My_Municipality.png"
+                            class="projectTemplateImg"
+                        />
+                        <p class="projectTemplateTitle">My Municipality</p>
+                        <p class="projectTemplateSubText">
+                            CookEasy - Is an app that lets users do this this
+                            and this
+                        </p>
+                        <a href="" class="projectTemplateButton">Coming Soon</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="projectTemplate">
+                        <img
+                            src="Images/Projects/CrustPlay.png"
+                            class="projectTemplateImg"
+                        />
+                        <p class="projectTemplateTitle">CrustPlay</p>
+                        <p class="projectTemplateSubText">
+                            CookEasy - Is an app that lets users do this this
+                            and this
+                        </p>
+                        <a href="" class="projectTemplateButton">Coming Soon</a>
+                    </div>
+
+                    <div class="projectTemplate">
+                        <img
+                            src="Images/Projects/Daastan_site.png"
+                            class="projectTemplateImg"
+                        />
+                        <p class="projectTemplateTitle">Daastan Website</p>
+                        <p class="projectTemplateSubText">
+                            CookEasy - Is an app that lets users do this this
+                            and this
+                        </p>
+                        <a href="" class="projectTemplateButton">Coming Soon</a>
+                    </div>
+                </div>
+            </div> -->

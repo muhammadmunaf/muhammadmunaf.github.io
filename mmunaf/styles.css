@@ -495,6 +495,7 @@ section#myProjects .seeAllProjectsBtn:hover {
     position: absolute;
     top: 24px;
     left: 24px;
+    z-index: 99;
 }
 
 .projectTemplatePicture {
@@ -505,6 +506,7 @@ section#myProjects .seeAllProjectsBtn:hover {
     cursor: pointer;
     width: 36vw;
     height: auto;
+    z-index: 1;
 }
 .projectTemplatePicture:hover {
     transform: scale(1.02);
@@ -1016,7 +1018,7 @@ section#projectDetails .catBtnText {
 }
 section#projectDetails .catBtn {
     /* width: 16vw; */
-    width: 20vw;
+    width: 22vw;
     border-bottom: 2px solid var(--whiteSecondary);
     padding-bottom: 24px;
     display: flex;
