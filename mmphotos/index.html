@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Photos</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section id="title">
+            <h1>Muhammad Munaf</h1>
+            <h2 class="sub">The Photographer</h2>
+
+            <p class="about">
+                Nunc vitae mauris sit amet est aliquet blandit eu in urna.
+                Suspendisse at accumsan ex. Donec eu dui et lectus fermentum
+                rhoncus. Ut tempus in velit in mattis.
+            </p>
+        </section>
+
+        <section id="gallery">
+            <div id="selector">
+                <button class="tabBtn active">All</button>
+                <button class="tabBtn">Product</button>
+                <button class="tabBtn">Nature</button>
+                <button class="tabBtn">Events</button>
+            </div>
+
+            <div class="photos">
+                <img src="https://picsum.photos/200" alt="" />
+                <img src="https://picsum.photos/200/150" alt="" />
+                <img src="https://picsum.photos/200" alt="" />
+                <img src="https://picsum.photos/200/300" alt="" />
+                <img src="https://picsum.photos/200" alt="" />
+                <img src="https://picsum.photos/200" alt="" />
+                <img src="https://picsum.photos/200/300" alt="" />
+                <img src="https://picsum.photos/200/300" alt="" />
+            </div>
+        </section>
+
+        <script>
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("selector");
+            var btns = header.getElementsByClassName("tabBtn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(
+                        " active",
+                        ""
+                    );
+                    this.className += " active";
+                });
+            }
+        </script>
+    </body>
+</html>
